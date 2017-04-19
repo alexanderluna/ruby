@@ -1,0 +1,5 @@
+Hi <%= @user.name %>,
+<br>
+Message: <%= raw @message %>
+<br>
+<%= link_to "unsubscribe", "https://www.oremosadios.com/unsubscribe?#{{email: @user.email}.to_param}", class: "btn btn-primary" %>

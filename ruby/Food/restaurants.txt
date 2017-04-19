@@ -1,0 +1,4 @@
+Black Rabbit	Bar	10
+Alexander	Bar	20
+Hyouka	Cafe	15
+eden	cafe	8
