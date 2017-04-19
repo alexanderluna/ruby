@@ -16,3 +16,5 @@ A collection of Ruby projects testing different Ruby features.
 
 ## Sinatra
 Playing around with Sinatra.
+
+Add links in the future
