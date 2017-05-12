@@ -1,0 +1,6 @@
+<% if @comments.next_page %>
+  $('#native_comments').append('<%= j render @comments, micropost: @micropost %>');
+  $('.pagination').replaceWith('<%= j will_paginate @comments %>');
+<% else %>
+  $('.pagination').remove();
+<% end %>

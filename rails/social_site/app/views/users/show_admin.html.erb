@@ -1,0 +1,76 @@
+<div class="row">
+  <aside class="col-md-4">
+    <section id="scrollupmicropost" class="user_info">
+      <%= render "shared/user_info", user: current_user %>
+    </section>
+    <section>
+      <%= render 'user_numbers' %>
+    </section>
+    <section>
+      <%= render "shared/ad_form" %>
+    </section>
+  </aside>
+  <div class="col-md-8">
+    <div class="col-sm-12 col-xs-12 col-md-10">
+      <%= render 'shared/send_email' %>
+        <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#invisible">Pending (<%= @microposts_invisible.count %>)</a></li>
+          <li><a data-toggle="tab" href="#visible">Approve (<%= @microposts_visible.count %>)</a></li>
+          <li><a data-toggle="tab" href="#banned">Block (<%= @users_banned.count %>)</a></li>
+          <li><a data-toggle="tab" href="#picture">Image (<%= @micropost_picture.count %>)</a></li>
+          <li><a data-toggle="tab" href="#statistic">Statistic</a></li>
+        </ul>
+
+        <div class="tab-content">
+          <!-- Render unapproved Microposts -->
+          <div id="invisible" class="tab-pane fade in active">
+            <ol id="visible_posts" class="microposts">
+              <%= render @microposts_invisible %>
+            </ol>
+            <%= will_paginate @microposts_invisible, :params => {:anchor => "invisible"}, :param_name => 'unapproved', :class => "page" %>
+          </div>
+
+          <!-- Render approved Microposts -->
+          <div id="visible" class="tab-pane fade">
+            <ol id="invisible_posts" class="microposts">
+              <%= render @microposts_visible %>
+            </ol>
+            <%= will_paginate @microposts_visible, :params => {:anchor => "visible"}, :param_name => 'approved', :class => "page" %>
+          </div>
+
+          <!-- Render banned Users -->
+          <div id="banned" class="tab-pane fade">
+            <ol id="banned_user" class="users">
+              <%= render @users_banned %>
+            </ol>
+            <%= will_paginate @users_banned, :params => {:anchor => "banned"}, :param_name => 'banned', :class => "page" %>
+          </div>
+
+          <!-- Render Post with Pictures -->
+          <div id="picture" class="tab-pane fade">
+            <ol id="picture" class="micropost" style="padding-left:0px;">
+              <%= render @micropost_picture %>
+            </ol>
+            <%= will_paginate @micropost_picture, :params => {:anchor => "picture"}, :param_name => 'picture', :class => "page" %>
+          </div>
+
+          <!-- Render Statistics -->
+          <div id="statistic" class="tab-pane fade">
+            <%= render 'shared/statistics' %>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(loadImage());
+  var url = document.location.toString();
+  if (url.match('#')) {
+    $('.nav-tabs a[href="#' + url.split('#')[1] + '"]').tab('show');
+  }
+  // Change hash for page-reload
+  $('.nav-tabs a').on('shown.bs.tab', function (e) {
+    window.location.hash = e.target.hash;
+  })
+</script>

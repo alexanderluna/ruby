@@ -1,0 +1,16 @@
+<% provide(:button_text, "Crear Cuenta") %>
+<h1>Crear Cuenta</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <div id="fb-root">
+    <%= link_to "Crea tu Cuenta via Facebook", 'auth/facebook', data: { disable_with: 'cargando informacion...' }, class: "btn btn-lg btn-primary", id: "sign_in" %>
+    </div>
+    <br>
+    <br>
+    <%= render 'user_form' %>
+    <br>
+    <br>
+    <%= raw @ad.big_ad %>
+  </div>
+</div>

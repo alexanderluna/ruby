@@ -1,0 +1,9 @@
+<%= form_for([micropost, Comment.new], remote: true) do |f| %>
+  <%= render "shared/error_messages", object: f.object %>
+
+  <%= f.text_area :content, placeholder: "Escribe tu oracion por esta person aqui", class: "form-control", id: "comment_form_#{micropost.id}" %>
+  <%= f.submit "Crear Commentario", class: "btn btn-primary"%>
+
+<% end %>
+<br>
+<br>

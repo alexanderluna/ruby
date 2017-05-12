@@ -1,0 +1,15 @@
+<div id="<%= comment.id %>">
+  <div class="thumbnail" id="individual_comment">
+    <%= link_to gravatar_for(comment.user, size: '40', css: "img-circle"), comment.user, class: "col-md-1 col-sm-2 col-xs-2" %>
+    <%= link_to comment.user.name, comment.user, class: "col-md-10 col-sm-8 col-xs-8" %>
+    <% if logged_in? %>
+      <%= link_to_if (current_user?(comment.user) || current_user.admin?), "", [micropost, comment], remote: true, method: :delete, data: { confirm: "Estas seguro que quieres borrar tu commmentario?"}, id: "comment_delete", class: "glyphicon glyphicon-trash delete" %>
+    <% end %>
+    <br>
+    <div class="caption col-md-offset-1 col-sm-offset-2 col-xs-offset-2">
+      <div id="comment_content">
+        <%= comment.content %>
+      </div>
+    </div>
+  </div>
+</div>

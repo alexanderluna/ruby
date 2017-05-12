@@ -1,0 +1,42 @@
+<div id="micropost_<%= micropost.id %>">
+<div class="thumbnail">
+  <div id="author_info">
+    <%= link_to gravatar_for(micropost.user, size: '40', css: "img-circle"), micropost.user, class: "col-md-1 col-sm-2 col-xs-2"%>
+    <%= link_to micropost.user.name, micropost.user, class: "col-md-8 col-sm-8 col-xs-7", id:"author_name" %>
+    <div class="post_tools">
+      <% if logged_in? %>
+        <%= link_to_if (current_user?(micropost.user) || current_user.admin?), "", edit_micropost_path(micropost), class: "glyphicon glyphicon-edit edit" %>
+        <%= link_to_if (!current_page?(micropost) && current_user.admin?), "", micropost, class: "glyphicon glyphicon-trash delete", method: :delete, remote: true, data: { confirm: "Quieres borrar esta Oracion ?"}%>
+        <%= link_to_if current_user.admin?, "", toggle_approve_micropost_path(micropost), :remote => true, id: "post_#{micropost.id}", class: "#{toggle_text(micropost)}" %>
+      <% end %>
+    </div>
+  </div>
+  <%= link_to image_tag('load-image.gif', class: "load-image", data: {source: micropost.picture}), micropost%>
+  <div class="caption">
+    <div class="content">
+      <p id="post_content"><%= micropost.content %></p>
+      <!-- Facebook like and share -->
+      <div class="fb-like"
+          data-href="https://www.oremosadios.com<%= url_for(micropost) %>"
+          data-layout="button_count"
+          data-action="like"
+          data-size="large"
+          data-show-faces="false"
+          data-share="true"
+          style="vertical-align:top;zoom:1;*display:inline">
+      </div>
+
+      <!-- <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.oremosadios.com<%= URI.encode(url_for(micropost)) %>" class="twitter-share-button"
+          data-size="large" data-text="Pido oracion"
+          data-via="oremos_a_dios"
+          data-lang="es"
+          data-show-count="false">Twittear</a> -->
+      <% if logged_in? %>
+        <%= link_to "", post_link(micropost), remote: true, id: "like_#{micropost.id}", style: "color:#e81c4f;text-decoration:none;", class: "like glyphicon #{liked_post micropost}" %>
+        <span style="font-size:20px;color:#e81c4f;"id="like_count_<%= micropost.id %>"><%= micropost.votes_for.size %></span> Me gusta
+      <% end %>
+    </div>
+  </div>
+</div>
+<%= render 'shared/comment_section', micropost: micropost if !current_page?(micropost) %>
+</div>

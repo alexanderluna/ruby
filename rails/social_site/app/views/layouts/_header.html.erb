@@ -1,0 +1,26 @@
+<nav class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%= link_to "Oraciones", feed_path, class: "navbar-brand", id:"logo"%>
+    </div>
+
+    <div class="collapse navbar-collapse nav navbar-nav navbar-right" id="bs-example-navbar-collapse-1">
+          <li><%= link_to "Usuarios", users_path, class: "navigation-text" %></li>
+        <% if logged_in? %>
+          <li><%= link_to "Mis Amigos", featured_path, class: "navigation-text" %></li>
+          <li><%= link_to  "(#{current_user.notifications.count}) Notificaciones", notifications_path, class: "navigation-text" %></li>
+          <li><%= link_to gravatar_for(current_user, size: '30', css: "img-circle") + ' Mi Perfil' , current_user, style: "padding-top:12px; padding-bottom:8px;", class: "navigation-text" %></li>
+          <li><%= link_to "", logout_path, class: "navigation-text glyphicon glyphicon-off delete", method: "delete" %></li>
+        <% else %>
+          <li><%= link_to_unless logged_in?, "Iniciar Session", login_path, class: "navigation-text" %></li>
+        <% end %>
+    </div>
+  </div>
+</nav>

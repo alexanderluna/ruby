@@ -1,0 +1,13 @@
+<h2>Notificaciones (<%= @notification.count %>)</h2>
+  <div class="row col-md-offset-4 col-sm-offset-3">
+    <ul class="users col-md-7 col-sm-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12">
+      <% @notification.each do |n| %>
+        <li id="notification_<%= n.id %>">
+          <h4>
+            <%= link_to short_name(n.subscribed_user), n.subscribed_user %> <%= n.notice_type %> en tu <%= link_to "oracion", n.micropost %>
+            <span style="font-size: 8px;"><%= link_to "", n, :remote => true, method: :delete, class: "glyphicon glyphicon-trash delete", style: "color:red" %></span>
+          </h4>
+        </li>
+      <% end %>
+    </ul>
+  </div>

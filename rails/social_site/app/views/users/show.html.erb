@@ -1,0 +1,45 @@
+<div class="row">
+  <aside class="col-md-4">
+    <section id="scrollupmicropost" class="user_info">
+      <%= render "shared/user_info", user: @user %>
+    </section>
+    <section class="stats">
+      <%= render "shared/stats" %>
+    </section>
+    <% unless logged_in? %>
+      <section style="margin-bottom:10px;">
+        <h2>Presiona aqui, inscribete gratis</h2>
+        <%= link_to "Crea tu Cuenta y escribe tu Oracion", signup_path, class: "btn btn-primary col-md-12 col-sm-12 col-xs-12" %>
+        <br>
+        <br>
+        <%= link_to "Inicia Session", login_path, class: "btn btn-primary col-md-12 col-sm-12 col-xs-12" %>
+      </section>
+    <% end %>
+    <% if logged_in? %>
+      <section>
+        <%= render "follow_form" %>
+      </section>
+      <section>
+        <% if current_page?(current_user) %>
+          <%= render current_user.banned? ? 'shared/user_banned' : 'shared/micropost_form' %>
+        <% end %>
+      </section>
+    <% end %>
+    <section>
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- Bendecirte 300 X 250 -->
+      <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px;" data-ad-client="ca-pub-5259585766860288" data-ad-slot="5737068459"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </section>
+  </aside>
+  <div class="col-md-8">
+    <div class="col-sm-12 col-xs-12 col-md-10">
+      <ol class="microposts">
+        <%= render @microposts_visible %>
+      </ol>
+      <%= will_paginate @microposts_visible, :params => {:anchor => "visible"}, :param_name => 'approved', :class => 'page' %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-sm-12 col-xs-12 col-md-12">
+    <ul class="nav nav-tabs">
+      <li><a data-toggle="tab" href="#video">Videos</a></li>
+      <li class="active"><a data-toggle="tab" href="#posts">Articulos</a></li>
+    </ul>
+
+
+    <div class="tab-content" style="padding-top:10px;">
+    <!-- Render Youtube Videos -->
+    <div id="video" class="tab-pane fade">
+      <%= render 'youtube' %>
+    </div>
+
+    <!-- Render Articles Videos -->
+    <div id="posts" class="tab-pane fade in active">
+      <%= render 'articles' %>
+    </div>
+
+  </div>
+</div>

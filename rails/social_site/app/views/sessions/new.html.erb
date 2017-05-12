@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= link_to "Inicia Session via Facebook", 'auth/facebook', class: "btn btn-lg btn-primary" %>
+    <br>
+    <br>
+    <%= form_for(:session, url: login_path) do |f| %>
+
+      <%= f.label :email %>
+      <%= f.email_field :email, class: "form-control" %>
+
+      <%= f.label :password, "Contraseña" %>
+      <%= link_to "(Olvidaste tu Clave?)", new_password_reset_path %>
+      <%= f.password_field :password, class: "form-control" %>
+
+      <%= f.submit "Iniciar Session", class: "btn btn-primary" %>
+    <% end %>
+    <br>
+    <p>
+      Todavia no tienes una cuenta ?
+      <%= link_to "Crear Cuenta", signup_path %>
+    </p>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Bendecirte 300 X 250 -->
+    <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px;" data-ad-client="ca-pub-5259585766860288" data-ad-slot="5737068459"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+</div>

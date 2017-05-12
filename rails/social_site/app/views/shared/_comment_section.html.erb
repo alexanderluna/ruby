@@ -1,0 +1,6 @@
+<div class="comment_section_feed<%= micropost.id %>">
+  <%= render micropost.comments, micropost: micropost %>
+</div>
+<div id="comment_form<%= micropost.id %>">
+  <%= render 'shared/comment_form', micropost: micropost if logged_in? %>
+</div>

@@ -1,0 +1,46 @@
+<% meta_tag(:description, @micropost.content) %>
+<% meta_tag(:image, @micropost.picture) %>
+<div class="row">
+  <div class="col-md-8 col-md-offset-2 col-xs-12">
+    <% unless logged_in? %>
+      <section style="margin-bottom:10px;">
+        <h2>Presiona aqui, inscribete gratis</h2>
+        <%= link_to "Crea tu Cuenta y escribe tu Oracion", signup_path, class: "btn btn-primary col-md-12 col-sm-12 col-xs-12" %>
+        <br>
+        <br>
+        <%= link_to "Inicia Session", login_path, class: "btn btn-primary col-md-12 col-sm-12 col-xs-12" %>
+      </section>
+    <% end %>
+    <%= render 'micropost', micropost: @micropost %>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Bendecirte 300 X 250 -->
+    <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px;" data-ad-client="ca-pub-5259585766860288" data-ad-slot="5737068459"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <ul class="nav nav-pills nav-justified">
+      <li class="active"><a data-toggle="tab" href="#native_comments">Commentar</a></li>
+      <li><a data-toggle="tab" href="#facebook_comments">Facebook</a></li>
+    </ul>
+
+    <div class="tab-content" id="comment">
+      <div id="native_comments" class="tab-pane fade in active">
+        <%= render 'shared/comment_form', micropost: @micropost if logged_in? %>
+      <div class="comment_section_feed<%= @micropost.id %>">
+        <%= render @comments, micropost: @micropost%>
+      </div>
+        <div id="infinite-scrolling">
+          <%= will_paginate @comments %>
+        </div>
+      </div>
+
+      <div id="facebook_comments" class="tab-pane fade center">
+        <div class="fb-comments"
+          data-href="<%= request.url %>"
+          data-numposts="10">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

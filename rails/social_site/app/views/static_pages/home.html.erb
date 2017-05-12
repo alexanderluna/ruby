@@ -1,0 +1,80 @@
+<div class="center jumbotron">
+  <h1 style="color:white;">Oraciones para todos</h1>
+  <br>
+  <h2 style="color:white">
+    <b>
+      "Porque donde están dos o tres reunidos en mi nombre,<br>
+      allí estoy yo en medio de ellos."
+    </b>
+    <br>
+    Mateo 18:20
+    <br>
+  </h2>
+  <% if !logged_in? %>
+    <h2 style="color:white">
+      Presiona donde dice <br>
+      "Registrate con Facebook"
+    </h2>
+    <%= link_to "Crea tu Cuenta", signup_path , class: "btn btn-lg btn-primary" %>
+    <br>
+    <br>
+    <%= link_to "Registrate con Facebook", 'auth/facebook', class: "btn btn-lg btn-primary" %>
+    <br>
+    <%= link_to "Registrate con Instagram", 'auth/instagram', class: "btn btn-lg btn-primary" %>
+    <br>
+    <%= link_to "Registrate con Twitter", 'auth/twitter', class: "btn btn-lg btn-primary" %>
+    <p style="color:white"><b>(Crea tu cuenta con un click)</b></p>
+  <% end %>
+</div>
+
+<div class="row">
+  <div class="col-md-8 col-md-offset-2 col-sm-12">
+    <div class="center">
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- Bendecirte 300 X 250 -->
+      <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px;" data-ad-client="ca-pub-5259585766860288" data-ad-slot="5737068459"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+    <section>
+      <h1>Nuestra Oracion</h1>
+      <h3>
+        El propósito de esta página, es el de conectar
+        las oraciones de todos los cristianos a través
+        de una red social. En este tiempo de globalización
+        una red como esta es perfecta para multiplicar el
+        poder de la oración y de nuestra fe.
+      </h3>
+    </section>
+    <br>
+    <section>
+      <h1>Aplicaciones para tu Fe</h1>
+      <h3>
+        Hemos creado diversas aplicaciones que te servirán
+        para fortalecer tu fe, encontrar un consejo y
+        recibir la palabra de Dios cada dia.
+      </h3>
+    </section>
+    <section style="padding-bottom:30px;">
+      <h1>Siguenos en Nuestas Redes Sociales</h1>
+      <a href="https://www.facebook.com/PabloRomanCaballero" target="_blank">
+        <img src="https://s3-us-west-2.amazonaws.com/hyouka/static_files/facebook.jpg" alt="facebook" class="img-circle col-md-3 col-sm-3 col-xs-3" />
+      </a>
+      <a href="https://www.instagram.com/pablo.roman.caballero/" target="_blank">
+        <img src="https://s3-us-west-2.amazonaws.com/hyouka/static_files/instagram.jpg" alt="instagram" class="img-circle col-md-3 col-sm-3 col-xs-3" />
+      </a>
+      <a href="https://twitter.com/pablocaballero" target="_blank">
+        <img src="https://s3-us-west-2.amazonaws.com/hyouka/static_files/twitter.png" alt="twitter" class="img-circle col-md-3 col-sm-3 col-xs-3" />
+      </a>
+      <a href="" target="_blank">
+        <img src="https://s3-us-west-2.amazonaws.com/hyouka/static_files/googleplus.png" alt="google plus" class="img-circle col-md-3 col-sm-3 col-xs-3" />
+      </a>
+    </section>
+    <section>
+      <center>
+        <a href="/privacy"><b>Our Terms of Use and Privacy Policy</b></a>
+      </center>
+    </section>
+  </div>
+</div>

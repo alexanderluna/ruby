@@ -1,0 +1,16 @@
+<% if @microposts.next_page %>
+  var current_div = document.createElement('div');
+  var counter = '<%= @microposts.current_page %>';
+  current_div.className = 'ad_frame' + counter;
+  current_div.innerHTML = '<%= j raw @ad.big_ad %>';
+
+  $('#infinite-scrolling').append('<%= j render @microposts %>');
+  $('#infinite-scrolling').append(current_div);
+  $('.ad_frame' + (counter - 2)).remove();
+  $('.pagination').replaceWith('<%= j will_paginate @microposts %>');
+  FB.XFBML.parse();
+  // twttr.widgets.load();
+  $(loadImage());
+<% else %>
+  $('.pagination').remove();
+<% end %>

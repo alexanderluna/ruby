@@ -1,0 +1,7 @@
+if($("#post_<%= @micropost.id %>").attr("class") == "glyphicon glyphicon-unchecked") {
+ $("#post_<%= @micropost.id %>").removeClass("glyphicon glyphicon-unchecked");
+ $("#post_<%= @micropost.id %>").addClass("glyphicon glyphicon-check");
+} else {
+ $("#post_<%= @micropost.id %>").removeClass("glyphicon glyphicon-check");
+ $("#post_<%= @micropost.id %>").addClass("glyphicon glyphicon-unchecked");
+}

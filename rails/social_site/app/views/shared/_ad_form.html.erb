@@ -1,0 +1,10 @@
+<%= form_for(@ad) do |f| %>
+  <%= render "shared/error_messages", object: f.object %>
+  <%= f.label :big_ad %>
+  <%= f.text_area :big_ad, class: "form-control" %>
+
+  <%= f.label :banner_ad %>
+  <%= f.text_area :banner_ad, class: "form-control" %>
+
+  <%= f.submit "Post Ad", class: "btn btn-primary" %>
+<% end %>

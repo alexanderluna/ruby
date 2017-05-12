@@ -1,0 +1,9 @@
+<li>
+  <%= link_to gravatar_for(user, size: '60', css: 'img-circle'), user, class: "col-md-2 col-sm-2 col-xs-3" %>
+  <h3 class="col-md-8 col-sm-8 col-xs-6"><%= link_to user.name, user, id: "index_user_name" %></h3>
+  <% if logged_in? %>
+    <% if current_user.admin? && !current_user?(user) %>
+      <%= link_to "", user, method: :delete, data: { confirm: "Are you sure ?"}, class: "col-md-2 col-sm-2 col-xs-3 glyphicon glyphicon-trash delete" %>
+    <% end %>
+  <% end %>
+</li>

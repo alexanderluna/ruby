@@ -1,0 +1,7 @@
+$('.microposts').prepend('<%= j render @micropost %>');
+$('#micropost_form_feed').val('');
+$('html, body').animate({
+               scrollTop: $("#micropost_<%= @micropost.id %>").offset().top
+           });
+FB.XFBML.parse();
+loadImage();

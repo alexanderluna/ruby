@@ -1,0 +1,90 @@
+<%= form_for(@micropost, remote: true, html: {multipart: true, class: "directUpload", data: { 'form-data' => (@s3_direct_post.fields), 'url' => @s3_direct_post.url, 'host' => URI.parse(@s3_direct_post.url).host } }) do |f| %>
+  <%= render "shared/error_messages", object: f.object %>
+
+  <h2>Escribe aqui tu Oración</h2>
+  <%= f.hidden_field :title, value: '' %>
+  <%= f.text_area :content, required: true, class: "form-control", placeholder: "Porfavor comienza aqui a escribir...", id: "micropost_form_feed" %>
+
+  <div class="field">
+    <a href="#" class="btn btn-primary" id="uploadButton" type="button" onclick="document.getElementById('fileID').click(); return false;"><b>+ Sube una Foto</b></a>
+    <br>
+    <input accept="image/jpeg,image/gif,image/png" name="micropost[picture]" id="fileID" type="file" style="visibility: hidden; display: none;" />
+  </div>
+
+  <% if current_user.admin? %>
+    <%= f.check_box :visible%>Approve
+  <% end %>
+  <%= f.submit "Publicar", class: "btn btn-primary" %>
+<% end %>
+
+<script type="text/javascript">
+  $('#micropost_picture').bind('change', function() {
+    var size_in_megabytes = this.files[0].size/1024/1024;
+    if (size_in_megabytes > 10) {
+      alert('La Imagen no puede ser mas grande de 10MB.');
+    }
+  });
+
+  $(function() {
+    $('.directUpload').find("input:file").each(function(i, elem) {
+      var fileInput    = $(elem);
+      var form         = $(fileInput.parents('form:first'));
+      var submitButton = form.find('input[type="submit"]');
+      var progressBar  = $("<div class='bar'></div>");
+      var barContainer = $("<br><div class='progress'></div>").append(progressBar);
+      fileInput.after(barContainer);
+      fileInput.fileupload({
+        fileInput:       fileInput,
+        url:             form.data('url'),
+        type:            'POST',
+        singleFileUploads: true,
+        autoUpload:       true,
+        disableImageResize: false,
+        imageMaxWidth:    700,
+        imageMaxHeight:   700,
+        minWidth:         700,
+        minHeight:        700,
+        imageCrop:        true,
+        formData:         form.data('form-data'),
+        paramName:        'file', // S3 does not like nested name fields i.e. name="user[avatar_url]"
+        dataType:         'XML',  // S3 returns XML if success_action_status is set to 201
+        replaceFileInput: false,
+
+        progressall: function (e, data) {
+          var progress = parseInt(data.loaded / data.total * 100, 10);
+          progressBar.css('width', progress + '%')
+        },
+        start: function (e) {
+          submitButton.prop('disabled', true);
+
+          progressBar.
+            css('background', 'green').
+            css('display', 'block').
+            css('width', '0%').
+            css('color', 'white').
+            text("Cargando...");
+        },
+        done: function(e, data) {
+          submitButton.prop('disabled', false);
+          progressBar.text("Se subio tu Foto");
+
+          // extract key and generate URL from response
+          var key   = $(data.jqXHR.responseXML).find("Key").text();
+          var url   = '//' + form.data('host') + '/' + key;
+
+          // create hidden field
+          var input = $("<input />", { type:'hidden', name: fileInput.attr('name'), value: url })
+          form.append(input);
+        },
+        fail: function(e, data) {
+          submitButton.prop('disabled', false);
+
+          progressBar.
+            css("background", "red").
+            text("Failed");
+        }
+      });
+    });
+  });
+
+</script>

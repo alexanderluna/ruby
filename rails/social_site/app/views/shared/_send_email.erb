@@ -1,0 +1,56 @@
+<h1 class="text-center">Email Newsletter</h1>
+<div class="well well-sm">
+  <%= form_tag(send_email_path, method: "post", :class=>"form-horizontal") do %>
+  <fieldset>
+    <!-- Subject input-->
+    <div class="form-group">
+      <label class="col-md-2 control-label" for="name">Subject</label>
+      <div class="col-md-10">
+        <input id="subject" name="subject" type="text" placeholder="Email Subject" class="form-control">
+      </div>
+    </div>
+    <!-- Provider input-->
+    <div class="form-group">
+      <label class="col-md-2 control-label" for="name">To: </label>
+      <div class="col-md-10">
+        <label class="radio-inline"><input name="provider" type="radio" value="facebook">Facebook</label>
+        <label class="radio-inline"><input name="provider" type="radio" value="nil">Neutral</label>
+        <label class="radio-inline"><input name="provider" type="radio" value="instagram">Instagram</label>
+        <label class="radio-inline"><input name="provider" type="radio" value="twitter">Twitter</label>
+        <label class="radio-inline"><input name="provider" type="radio" value="all">All</label>
+        <label class="radio-inline"><input name="provider" type="radio" value="single">Single</label>
+        <label class="radio-inline"><input name="provider" type="radio" value="cristianobook">Cristianobook</label>
+        <label class="radio-inline"><input name="provider" type="radio" value="test_email">Test</label>
+      </div>
+    </div>
+    <!-- Counter input for email offset -->
+    <div class="form-group">
+      <label class="col-md-2 control-label" for="name">Start</label>
+      <div class="col-md-10">
+        <input id="start" name="start" type="text" placeholder="start" class="form-control">
+      </div>
+    </div>
+    <!-- Email input -->
+    <div class="form-group">
+      <label class="col-md-2 control-label" for="name">Email</label>
+      <div class="col-md-10">
+        <input id="email" name="email" type="text" placeholder="Email" class="form-control">
+      </div>
+    </div>
+    <!-- Message body -->
+    <div class="form-group">
+      <label class="col-md-2 control-label" for="message">Content</label>
+      <div class="col-md-10">
+        <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+      </div>
+    </div>
+
+    <!-- Form submit -->
+    <div class="form-group">
+      <div class="col-md-12 text-right">
+        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+      </div>
+    </div>
+  </fieldset>
+  <% end %>
+</div>

@@ -1,0 +1,14 @@
+<% @youtube["items"].each do |video| %>
+<div class="col-md-6 col-sm-12 col-xs-12">
+  <div class="thumbnail">
+    <iframe height="330px" width="100%" class="center youtube_video" src="https://www.youtube.com/embed/<%= video["id"]["videoId"] %>" frameborder="0" allowfullscreen></iframe>
+    <div class="caption">
+      <h2>
+        <a target="_blank" href="https://www.youtube.com/watch?v=<%= video["id"]["videoId"] %>">
+          <%= video["snippet"]["title"] %>
+        </a>
+      </h2>
+    </div>
+  </div>
+</div>
+<% end %>

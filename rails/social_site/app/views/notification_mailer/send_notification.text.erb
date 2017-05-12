@@ -1,0 +1,12 @@
+Hola <%= @notification.user.name %>,
+
+<%= @notification.subscribed_user.name %>, <%= @notification.notice_type %> en tu oracion.
+
+
+
+  Si usted no desea recibir nuestros correos sobre oraciones por sus peticiones, estudios bíblicos y notificaciones sobre recursos cristianos,
+  por favor de presionar el siguiente enlace. If you do not wish to receive our emails, including prayers, bible studies and christian resources,
+  please click on the link at the end of this statement.
+
+
+Para dejader de recibir notificaciones clic <%= link_to "aqui", "https://www.oremosadios.com/unsubscribe_notify?#{{email: @notification.user.email}.to_param}" %>

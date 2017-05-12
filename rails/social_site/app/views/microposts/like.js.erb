@@ -1,0 +1,3 @@
+$("#like_<%= @micropost.id %>").removeClass('glyphicon-heart-empty').addClass('glyphicon-heart');
+$("#like_<%= @micropost.id %>").attr('href', "<%= unlike_micropost_path(@micropost.id) %>");
+$("#like_count_<%= @micropost.id %>").text("<%= @micropost.votes_for.size %>");

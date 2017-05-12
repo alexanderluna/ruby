@@ -1,0 +1,55 @@
+<h1>Oraciones de todos</h1>
+<div class="row">
+  <aside class="col-md-4">
+<% if logged_in? %>
+    <section id="scrollupmicropost" class="user_info">
+      <%= render "shared/user_info", user: current_user %>
+    </section>
+    <section class="stats">
+      <%= render 'shared/stats' %>
+    </section>
+    <section>
+      <%= render current_user.banned? ? 'shared/user_banned' : 'shared/micropost_form' %>
+    </section>
+    <section class="center col-sm-12 col-xs-12" id="ad">
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- Bendecirte 300 X 250 -->
+      <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px;" data-ad-client="ca-pub-5259585766860288" data-ad-slot="5737068459"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </section>
+    <p>
+      <b>Consejo:</b> Para leer las oraciones de las demas personas,
+      presiona en <b>ORACIONES</b> arriba. Alli podras darle un <b>Me Gusta</b> y
+      orar por otros cristianos. Puedes tambien seguir a otros cristianos.
+      Las oraciones de las personas que sigues las podras leer presionando
+      en <b>Mis Amigos</b>.
+    </p>
+<% else %>
+    <section>
+      <h2>Presiona aqui, inscribete gratis</h2>
+      <%= link_to "Crea tu Cuenta y escribe tu Oracion", signup_path, class: "btn btn-primary col-md-12 col-sm-12 col-xs-12" %>
+      <br>
+      <br>
+      <%= link_to "Inicia Session", login_path, class: "btn btn-primary col-md-12 col-sm-12 col-xs-12" %>
+    </section>
+<% end %>
+  </aside>
+
+  <div class="col-md-7 col-sm-12 col-xs-12">
+    <ul class="microposts" id="show_more_posts">
+      <%= render @microposts %>
+    </ul>
+    <div class="ad_frame1">
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- Bendecirte 300 X 250 -->
+      <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px;" data-ad-client="ca-pub-5259585766860288" data-ad-slot="5737068459"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+    <div id="infinite-scrolling"></div>
+    <%= will_paginate @microposts %>
+  </div>
+</div>

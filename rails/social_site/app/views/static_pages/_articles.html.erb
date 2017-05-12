@@ -1,0 +1,20 @@
+<% @articles.each do |k, v| %>
+<div class="col-md-5 col-md-offset-1 col-sm-12 col-xs-12">
+  <div class="thumbnail">
+    <a target="_blank" href="<%= v[0] %>">
+      <img class="center" width="100%" target="_blank" src="<%= v[2] %>" alt="<%= v[1] %>">
+    </a>
+    <div class="caption">
+      <h2><a href="<%= v[0] %>"><%= v[1] %></a></h2>
+      <p><%= v[3] %></p>
+      <%= link_to "Leer articulo", v[0], class: "btn btn-primary", target: "_blank", style: "padding-left: 10px;padding-right: 10px;" %>
+    </div>
+  </div>
+</div>
+<% end %>
+
+
+<!--  v[0] link         </p> -->
+<!--  v[1] title        </p> -->
+<!--  v[2] image        </p> -->
+<!--  v[3] description  </p> -->

@@ -1,0 +1,26 @@
+<div class="col-xs-12 col-md-8 offset-md-2">
+  <p id="notice"><%= notice %></p>
+
+  <h1>Posts</h1>
+
+    <% @posts.each do |post| %>
+    <div class="col-12">
+      <div class="card">
+        <img class="card-img-top" src="<%= post.image %>" alt="<%= post.title %>">
+        <div class="card-block">
+          <h4 class="card-title"><%= link_to post.title, post %></h4>
+          <p class="card-text"><%= post.content %></p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Git Repo: <%= link_to "#{post.git_link}", post.git_link %></li>
+          <li class="list-group-item">Views: <%= post.views %></li>
+        </ul>
+        <div class="card-block">
+          <%= link_to post.section.name, post.section, class: "card-link btn btn-primary" %>
+          <%= link_to "View Code", post, class: "card-link btn btn-primary" %>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  <br>
+</div>

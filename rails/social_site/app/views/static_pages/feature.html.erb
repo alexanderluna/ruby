@@ -1,0 +1,37 @@
+<h1>Oraciones de personas que sigo</h1>
+<div class="row">
+  <aside class="col-md-4">
+    <section id="scrollupmicropost" class="user_info">
+      <%= render "shared/user_info", user: current_user %>
+    </section>
+    <section class="stats">
+      <%= render 'shared/stats' %>
+    </section>
+    <section>
+      <%= render 'shared/micropost_form' %>
+    </section>
+    <section>
+      <%= raw @ad.big_ad %>
+    </section>
+  </aside>
+  <div class="col-md-7 col-sm-12 col-xs-12">
+    <% if @follow_feed.any? %>
+      <ul class="microposts" id="show_more_posts">
+        <%= render @follow_feed %>
+      </ul>
+      <%= raw @ad.big_ad %>
+      <div id="infinite-scrolling"></div>
+      <%= will_paginate @follow_feed, class: 'page' %>
+    <% else %>
+      <h2>Todavia no sigues a nadie</h2>
+      <h2>Para seguir a otros:</h2>
+      <h2>1. presiona en <b>Oraciones</b> arriba</h2>
+      <h2>2. Busca oraciones intersantes</h2>
+      <h2>3. Presiona en el Nombre de la persona</h2>
+      <h2>4. Dale click en <b>Seguir</b> y listo</h2>
+    <% end %>
+  </div>
+  <script>
+    $(loadImage());
+  </script>
+</div>

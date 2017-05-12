@@ -1,0 +1,13 @@
+Hola <%= @user.name %>,
+<br>
+<%= raw @message %>
+<br>
+
+<p>
+  If you do not wish to receive our emails, including prayers, bible studies and christian resources,
+  please click on the link at the end of this statement. Si usted no desea recibir nuestros correos
+  sobre oraciones por sus peticiones, estudios bíblicos y notificaciones sobre recursos cristianos,
+  por favor de presionar el siguiente enlace.
+</p>
+<br>
+Para dejader de recibir correos clic <%= link_to "aqui", "https://www.oremosadios.com/unsubscribe?#{{class: @user.class.name, email: @user.email}.to_param}" %>

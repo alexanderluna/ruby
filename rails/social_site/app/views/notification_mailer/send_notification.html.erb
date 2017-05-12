@@ -1,0 +1,13 @@
+Hola <%= @notification.user.name %>,
+<br>
+<%= link_to @notification.subscribed_user.name, "https://www.oremosadios.com/users/#{@notification.subscribed_user.id}"  %>, <%= @notification.notice_type %> a tu <%= link_to "oracion", "https://www.oremosadios.com/microposts/#{@notification.micropost.id}"%>
+<br>
+<p>Dale aqui para ver la oracion: <%= link_to 'Mi oracion', "https://www.oremosadios.com/microposts/#{@notification.micropost.id}"%></p>
+
+<p>
+  Si usted no desea recibir nuestros correos sobre oraciones por sus peticiones, estudios bíblicos y notificaciones sobre recursos cristianos,
+  por favor de presionar el siguiente enlace. If you do not wish to receive our emails, including prayers, bible studies and christian resources,
+  please click on the link at the end of this statement.
+</p>
+<br>
+Para dejader de recibir notificaciones clic <%= link_to "aqui", "https://www.oremosadios.com/unsubscribe_notify?#{{email: @notification.user.email}.to_param}" %>

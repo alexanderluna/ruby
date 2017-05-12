@@ -1,0 +1,42 @@
+<%= form_for(@user) do |f| %>
+  <%= render "shared/error_messages", object: f.object %>
+
+  <%= f.label "Foto de Perfil" %>
+  <div class="gravatar_edit">
+    <%= gravatar_for(@user, size: '80', css: "img-circle") %>
+  </div>
+  <%= f.file_field :avatar, accept: 'image/jpeg,image/gif,image/png' %>
+
+  <%= f.label "Nombre" %>
+  <%= f.text_field :name, class: "form-control", required: true %>
+
+  <%= f.label :email %>
+  <%= f.email_field :email, class: "form-control", required: true %>
+
+  <%= f.label :password, "Contraseña" %>
+  <%= f.password_field :password, class: "form-control" %>
+
+  <%= f.label :password_confirmation, "Repetir Contraseña" %>
+  <%= f.password_field :password_confirmation, class: "form-control" %>
+
+  <% if logged_in? %>
+    <% if current_user.admin? %>
+       <%= f.label :banned, "Bloquear" %>
+       <%= f.check_box :banned%>
+       <br>
+       <br>
+     <% end %>
+  <% end %>
+
+
+  <%= f.submit yield(:button_text), class: "btn btn-primary" %>
+<% end %>
+
+<script type="text/javascript">
+  $('#user_avatar').bind('change', function() {
+    var size_in_megabytes = this.files[0].size/1024/1024;
+    if (size_in_megabytes > 5) {
+      alert('La Imagen no puede ser mas grande de 5MB.');
+    }
+  });
+</script>

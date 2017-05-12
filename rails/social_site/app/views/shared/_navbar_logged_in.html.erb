@@ -1,0 +1,4 @@
+<li><%= link_to "Usuarios", users_path, class: "navigation-text" %></li>
+<li><%= link_to "Oraciones de Amigos", featured_path, class: "navigation-text" %></li>
+<li><%= link_to gravatar_for(current_user, size: '40', css: "img-circle") + ' ' + current_user.name, current_user, class: "navigation-text" %></li>
+<li><%= link_to "", logout_path, class: "navigation-text glyphicon glyphicon-off", method: "delete" %></li>
