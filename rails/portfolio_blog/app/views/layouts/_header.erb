@@ -10,13 +10,13 @@
       <li class="nav-item">
         <%= link_to "#{section.name}", section, class: "nav-link" %>
       <% end %>
-      <% if logged_in? %>
-
-      <% end %>
     </ul>
-    <div class="form-inline my-2 my-lg-0">
-      <%= link_to "Admin Panel", current_user, class: "btn btn-success btn-outline-succes" %>
+    <% if logged_in? %>
+      <div class="form-inline my-2 my-lg-0">
+        <%= link_to "Admin Panel", current_user, class: "btn btn-success" %>
+        <%= link_to "Logout", admin_abmelden_path, method: :delete, data: {cofirm: "Do you want to log out ?"}, class: "btn btn-danger" %>
+      </div>
+    <% end %>
 
-    </div>
   </div>
 </nav>

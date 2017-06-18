@@ -1,29 +1,31 @@
-<p id="notice"><%= notice %></p>
+<div class="col-xs-12 col-md-7 offset-md-3">
+  <p id="notice"><%= notice %></p>
 
-<h1>Sections</h1>
+  <h1>Sections</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Order</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @sections.each do |section| %>
+  <table>
+    <thead>
       <tr>
-        <td><%= section.name %></td>
-        <td><%= section.order %></td>
-        <td><%= link_to 'Show', section %></td>
-        <td><%= link_to 'Edit', edit_section_path(section) %></td>
-        <td><%= link_to 'Destroy', section, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>Name</th>
+        <th>Order</th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
-<br>
+    <tbody>
+      <% @sections.each do |section| %>
+        <tr>
+          <td><%= section.name %></td>
+          <td><%= section.order %></td>
+          <td><%= link_to 'Show', section %></td>
+          <td><%= link_to 'Edit', edit_section_path(section) %></td>
+          <td><%= link_to 'Destroy', section, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 
-<%= link_to 'New Section', new_section_path %>
+  <br>
+
+  <%= link_to 'New Section', new_section_path %>
+</div>

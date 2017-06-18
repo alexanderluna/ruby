@@ -4,12 +4,12 @@
   <h1>Posts</h1>
 
     <% @posts.each do |post| %>
-    <div class="col-12">
+    <div class="xs-col-12">
       <div class="card">
-        <img class="card-img-top" src="<%= post.image %>" alt="<%= post.title %>">
+        <%= link_to image_tag(post.image, class:"card-img-top"), post %>
         <div class="card-block">
           <h4 class="card-title"><%= link_to post.title, post %></h4>
-          <p class="card-text"><%= post.content %></p>
+          <p class="card-text"><%= raw post.content %></p>
         </div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">Git Repo: <%= link_to "#{post.git_link}", post.git_link %></li>

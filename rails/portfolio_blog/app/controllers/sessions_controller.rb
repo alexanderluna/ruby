@@ -7,8 +7,7 @@ class SessionsController < ApplicationController
 # login user
   def create
     user = User.find_by(email: params[:session][:email].downcase)
-    # if user && user.authenticate(params[:session][:password].downcase)
-    if user
+    if user && user.valid_password?(params[:session][:password])
       log_in user
       redirect_to user
       flash[:success] = "Welcome"
@@ -21,6 +20,6 @@ class SessionsController < ApplicationController
 # logout user
   def destroy
     log_out if logged_in?
-    redirect_to feed_path
+    redirect_to root_path
   end
 end
