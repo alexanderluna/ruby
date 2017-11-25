@@ -7,9 +7,10 @@ layout: default
 <br>
 
 <ul>
-  {% for post in site.posts.categories %}
+  {% for category in site.categories %}
     <li>
-      <a href="{{ post.categerory.url }}">{{ post.categerory }}</a>
+      <a href="{{ category.url }}"></a>
+      <!-- <a href="{{ post.category.url }}">{{ post.category }}</a> -->
     </li>
   {% endfor %}
 </ul>
