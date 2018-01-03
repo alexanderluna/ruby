@@ -1,0 +1,20 @@
+ul {
+  list-style: none;
+  display: inline;
+}
+
+.jumbotron#main-page {
+  background-image: url("/img/jumb.jpg");
+  height: 20em;
+  margin-bottom: 0em;
+}
+
+.jumbotron h1 {
+  text-align: center;
+  color: white;
+  font-size: 5em;
+}
+
+.content {
+  margin-top: 1em;
+}
