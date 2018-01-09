@@ -17,3 +17,6 @@ def smallest_multiple
 end
 
 p smallest_multiple.max
+
+# Final Solution
+(1..20).reduce(1, :lcm)
