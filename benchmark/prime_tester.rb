@@ -1,34 +1,54 @@
-require('prime')
-# require('./my_prime')
+require 'benchmark'
+require 'prime'
+require './my_prime'
 
-class Integer
+iterations = 100_000
 
-  def isprime?
-    return false if self == 1
-    return true  if self == 2 || self == 3
-    #return true if n == 3
-    return false if self % 2 == 0 || self % 3 == 0
-    #return false if n % 3 == 0
+ruby_prime = []
+my_prime = []
 
-    i = 5
-    w = 2
-
-    while i * i <= self
-        return false if self % i == 0
-        i += w
-        w = 6 - w
+Benchmark.bm do |bm|
+  bm.report do
+    iterations.times do |i|
+      ruby_prime.push(i) if Prime.prime?(i)
     end
+  end
 
-    return true
+  bm.report do
+    iterations.times do |i|
+      my_prime.push(i) if isprime?(i)
+    end
   end
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ruby_prime = []
 my_prime = []
 
 t = Time.now
-100000.times do |i|
+10000000.times do |i|
   ruby_prime.push(i) if Prime.prime?(i)
 end
 puts "(Prime) Time to complete (100k): #{Time.now - t}"
@@ -36,7 +56,7 @@ puts "(Prime) #{ruby_prime.count} prime numbers found\n\n"
 
 
 b = Time.now
-100000.times do |i|
+10000000.times do |i|
   my_prime.push(i) if i.isprime?
 end
 
