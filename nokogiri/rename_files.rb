@@ -7,5 +7,5 @@ my_dir.sort.each do |filename|
 		ep = index < 10 ? "0#{index}" : "#{index}"
 		extention = File.extname(filename)
 		File.rename(filename, base_name + ep + extention)
-		#puts "File: #{filename} \tRenamed: #{base_name + ep + extention}"
+		puts "File: #{filename} \tRenamed: #{base_name + ep + extention}"
 end
