@@ -6,12 +6,11 @@ require 'mechanize'
 require 'rmagick'
 
 main_url = ARGV[0]
-folder = ARGV[1]
-start = ARGV[2].to_i || false
+start = ARGV[1].to_i || false
 name = main_url.split('/')[4]
 chapter_list = []
 
-abort("Missing arguments: I need a link and a folder name") unless main_url && folder
+abort("Missing arguments: I need a link") unless main_url
 
 Nokogiri::HTML(open(main_url)).css('.color_0077').each { |elem| chapter_list.push(elem['href'].to_s) }
 
