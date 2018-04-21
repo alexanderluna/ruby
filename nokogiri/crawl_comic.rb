@@ -40,11 +40,11 @@ chapter_list.each_with_index do |chapter, chapter_index|
     puts "\n***** Fetching Chapter #{chapter_index} *****\n#{chapter}"
     file_list = fetch_chapter(chapter_index, chapter)
   rescue
-    puts "***** Retrying Fetch *****"
+    puts "\n***** Retrying Fetch *****"
     retry if (tries += 1) < 5
   end
 
   pdf = Magick::ImageList.new(*file_list)
-  pdf.write("#{name} #{chapter_index}.pdf")
+  pdf.write("#{name}_#{chapter_index}.pdf")
   system("rm -r #{chapter_index}")
 end
