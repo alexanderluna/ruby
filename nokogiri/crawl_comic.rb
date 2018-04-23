@@ -36,6 +36,7 @@ chapter_list.each_with_index do |chapter, index|
     puts "\n=> Fetching Chapter #{index}\n#{chapter}"
     fetch_chapter(index, chapter)
   rescue
+    system("rm -r #{index}")
     retry if (tries += 1) < 5
   end
 
@@ -45,4 +46,4 @@ chapter_list.each_with_index do |chapter, index|
   system("rm -r #{index}")
 end
 
-abort("***** DONE DOWNLOADING *****")
+abort("\n***** DONE DOWNLOADING *****")
