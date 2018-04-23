@@ -45,6 +45,8 @@ chapter_list.each_with_index do |chapter, chapter_index|
   end
 
   pdf = Magick::ImageList.new(*file_list)
-  pdf.write("#{name}_#{chapter_index}.pdf")
+  pdf.write("#{name}_#{chapter_index.rjust(2, "0")}.pdf")
   system("rm -r #{chapter_index}")
 end
+
+abort("***** DONE DOWNLOADING *****")
