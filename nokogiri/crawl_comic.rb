@@ -14,39 +14,35 @@ abort("Missing arguments: I need a link") unless main_url
 
 Nokogiri::HTML(open(main_url)).css('.color_0077').each { |elem| chapter_list.push(elem['href'].to_s) }
 
-chapter_list.reject! { |i| !i.match?(name) }
-chapter_list.map! { |i| "http:" + i }
+chapter_list.map! { |i| "http:" + i if i.match?(name) }.compact!
 chapter_list.reverse!.pop
 
 def fetch_chapter(chapter_index, chapter)
-  images, files, agent = [], [], Mechanize.new
+  images, agent = [], Mechanize.new
   Nokogiri::HTML(open(chapter)).css('select.wid60 option').each { |page| images.push(page['value']) }
-
   images.uniq!.map! { |i| "http:#{i}" }
   images.each_with_index do |img, index|
     Nokogiri::HTML(open(img)).css("img#image").each do |src|
       print "."
       agent.get(src['src']).save("#{chapter_index}/#{index}.jpg")
-      files.push("#{chapter_index}/#{index}.jpg")
     end
   end
-  return files
 end
 
-chapter_list.each_with_index do |chapter, chapter_index|
-  next if start and chapter_index < start
+chapter_list.each_with_index do |chapter, index|
+  next if start and index < start
   begin
     tries ||= 0
-    puts "\n***** Fetching Chapter #{chapter_index} *****\n#{chapter}"
-    file_list = fetch_chapter(chapter_index, chapter)
+    puts "\n=> Fetching Chapter #{index}\n#{chapter}"
+    fetch_chapter(index, chapter)
   rescue
-    puts "\n***** Retrying Fetch *****"
     retry if (tries += 1) < 5
   end
 
-  pdf = Magick::ImageList.new(*file_list)
-  pdf.write("#{name}_#{chapter_index.rjust(2, "0")}.pdf")
-  system("rm -r #{chapter_index}")
+  files = Dir.open(index.to_s).sort.map { |n| "#{index}/#{n}" if n.match?('[0-9]') }.compact
+  pdf = Magick::ImageList.new(*files)
+  pdf.write(name + index.to_s.rjust(2, "0") + ".pdf")
+  system("rm -r #{index}")
 end
 
 abort("***** DONE DOWNLOADING *****")
