@@ -24,7 +24,12 @@ def fetch_chapter(chapter_index, chapter)
   images.each_with_index do |img, index|
     Nokogiri::HTML(open(img)).css("img#image").each do |src|
       print "."
-      agent.get(src['src']).save("#{chapter_index}/#{index}.jpg")
+      begin
+        tries ||= 0
+        agent.get(src['src']).save("#{chapter_index}/#{index.to_s.rjust(2, '0')}.jpg")
+      rescue
+        retry if (tries += 1) < 5
+      end
     end
   end
 end
@@ -33,11 +38,11 @@ chapter_list.each_with_index do |chapter, index|
   next if start and index < start
   begin
     tries ||= 0
-    puts "\n=> Fetching Chapter #{index}\n#{chapter}"
+    puts "\n=> Fetching Chapter #{index}\n=> #{chapter}"
     fetch_chapter(index, chapter)
   rescue
     system("rm -r #{index}")
-    retry if (tries += 1) < 5
+    retry if (tries += 1) < 10
   end
 
   files = Dir.open(index.to_s).sort.map { |n| "#{index}/#{n}" if n.match?('[0-9]') }.compact
