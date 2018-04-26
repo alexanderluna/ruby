@@ -47,8 +47,8 @@ chapter_list.each_with_index do |chapter, index|
 
   files = Dir.open(index.to_s).sort.map { |n| "#{index}/#{n}" if n.match?('[0-9]') }.compact
   pdf = Magick::ImageList.new(*files)
-  pdf.write(name + index.to_s.rjust(2, "0") + ".pdf")
+  pdf.write(name + index.to_s.rjust(3, "0") + ".pdf")
   system("rm -r #{index}")
 end
 
-abort("\n***** DONE DOWNLOADING *****")
+abort("\n\n***** DONE DOWNLOADING *****")
