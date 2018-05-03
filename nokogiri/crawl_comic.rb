@@ -14,7 +14,6 @@ chapters = Nokogiri::HTML(open(main_url)).css('.color_0077')
 chapters.map! { |a| "http:" + a['href'].to_s }
 chapters.select! { |link| link.match(name) }
 chapter.compact!.reverse!.pop
-chapters.map! { |i| "http:" + i if i.match?(name) }.compact!.reverse!.pop
 chapters.each_with_index do |chapter, index|
   next if start and index < start
   begin
