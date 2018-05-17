@@ -4,8 +4,7 @@ require 'rmagick'
 module Helper
 
   def Helper.download_image(options={})
-    sleep 2
-    print "."
+    puts "\t#{options[:link]}"
     begin
       tries ||= 0
       agent = Mechanize.new
