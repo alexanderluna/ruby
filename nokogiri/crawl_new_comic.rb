@@ -10,14 +10,18 @@ fetch_images = "phantomjs ~/.my_scripts/loadsite.js"
 abort("Missing Argument URL or NAME") unless main_url and name
 
 puts "=> Loading Chapters"
-system("#{fetch_chapters} #{main_url} > #{name}")
+unless Pathname.new(name).exist?
+  system("#{fetch_chapters} #{main_url} > #{name}")
+end
 
 chapter_list = File.open(name).to_a.reverse
 chapter_list.each_with_index do |link, index|
   next if start and index < start
   tmp_file = index.to_s + ".txt"
   puts "=> Downloading Chapter: #{index}\n#{link}"
-  system("#{fetch_images} #{link.chomp} #{tmp_file}")
+  unless Pathname.new(tmp_file).exist?
+    system("#{fetch_images} #{link.chomp} #{tmp_file}")
+  end
   img_list = File.read(tmp_file).split(',')
   img_list.each_with_index do |img, i|
     Helper.download_image(name: i, link: img, folder: index)
