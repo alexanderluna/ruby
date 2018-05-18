@@ -1,4 +1,5 @@
 require 'fileutils'
+require 'pathname'
 require_relative 'helper'
 
 main_url = ARGV[0]
