@@ -3,17 +3,19 @@ require 'rmagick'
 
 module Helper
 
-  def Helper.download_image(options={})
-    puts "\t#{options[:link]}"
-    begin
-      tries ||= 0
-      agent = Mechanize.new
-      name = options[:name].to_s.rjust(3, '0')
-      ext = File.extname(options[:link])
-      location = options[:folder].to_s + "/" + name + ext
-      agent.get(options[:link]).save(location)
-    rescue
-      retry if (tries += 1) < 5
+  def Helper.download_images_to_folder(images, options={})
+    agent = Mechanize.new
+    images.each_with_index do |img, i|
+      puts "\t#{img}"
+      begin
+        tries ||= 0
+        name = i.to_s.rjust(3, '0')
+        extention = File.extname(img)
+        location = options[:folder].to_s + "/" + name + extention
+        agent.get(img).save(location)
+      rescue
+        retry if (tries += 1) < 5
+      end
     end
   end
 
