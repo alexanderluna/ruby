@@ -24,9 +24,7 @@ chapter_list.each_with_index do |link, index|
     system("#{fetch_images} #{link.chomp} #{tmp_file}")
   end
   img_list = File.read(tmp_file).split(',')
-  img_list.each_with_index do |img, i|
-    Helper.download_image(name: i, link: img, folder: index)
-  end
+  Helper.download_images_to_folder(img_list, folder: index)
   Helper.create_pdf_from_dir(index.to_s)
   FileUtils.remove_dir(index.to_s)
   File.delete(tmp_file)
