@@ -13,19 +13,21 @@ abort("Missing arguments: I need a link") unless main_url
 chapters = Nokogiri::HTML(open(main_url)).css('.color_0077')
 chapters.map! { |a| "http:" + a['href'].to_s }
 chapters.select! { |link| link.match(name) }
-chapter.compact!.reverse!.pop
+chapters.compact!.reverse!.pop
 chapters.each_with_index do |chapter, index|
   next if start and index < start
   begin
     tries ||= 0
+    img_list = []
     puts "\n=> Fetching Chapter #{index}\n=> #{chapter}"
-    imgs = Nokogiri::HTML(open(chapter)).css('select.wid60 option')
-    imgs.uniq!.map! { |page| "http:" + page['value'].to_s }
-    imgs.each_with_index do |img, i|
+    pages = Nokogiri::HTML(open(chapter)).css('select.wid60 option')
+    pages.uniq!.map! { |page| "http:" + page['value'].to_s }
+    pages.each do |img|
       Nokogiri::HTML(open(img)).css("img#image").each do |src|
-        Helper.download_image(name: i, link: src['src'], folder: chapter_index)
+        img_list.push(src['src'])
       end
     end
+    Helper.download_images_to_folder(img_list, folder: chapter_index)
   rescue
     system("rm -r #{index}")
     retry if (tries += 1) < 10
