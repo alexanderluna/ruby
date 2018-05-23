@@ -1,10 +1,8 @@
-require 'mechanize'
 require 'rmagick'
 
 module Helper
 
   def Helper.download_images_to_folder(images, options={})
-    agent = Mechanize.new
     images.each_with_index do |img, i|
       puts "\t#{img}"
       begin
@@ -12,8 +10,9 @@ module Helper
         name = i.to_s.rjust(3, '0')
         extention = File.extname(img)
         location = options[:folder].to_s + "/" + name + extention
-        agent.get(img).save(location)
-      rescue
+        system("curl -s #{img} > #{location}")
+      rescue => e
+        puts "\t#{e}"
         retry if (tries += 1) < 5
       end
     end
