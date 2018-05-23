@@ -2,13 +2,12 @@ require 'fileutils'
 require 'pathname'
 require_relative 'helper'
 
+abort("Missing Argument URL or NAME") unless ARGV[0] and ARGV[1]
 main_url = ARGV[0]
 name = ARGV[1] + ".txt"
 start = ARGV[2].to_i || false
 fetch_chapters = "phantomjs ~/.my_scripts/crawl_site.js"
 fetch_images = "phantomjs ~/.my_scripts/loadsite.js"
-
-abort("Missing Argument URL or NAME") unless main_url and name
 
 puts "=> Loading Chapters"
 unless Pathname.new(name).exist?
@@ -24,6 +23,7 @@ chapter_list.each_with_index do |link, index|
     system("#{fetch_images} #{link.chomp} #{tmp_file}")
   end
   img_list = File.read(tmp_file).split(',')
+  FileUtils.mkdir(index.to_s)
   Helper.download_images_to_folder(img_list, folder: index)
   Helper.create_pdf_from_dir(index.to_s)
   FileUtils.remove_dir(index.to_s)
