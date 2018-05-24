@@ -2,6 +2,7 @@
 
 require 'nokogiri'
 require 'open-uri'
+require 'fileutils'
 require_relative 'helper'
 
 main_url = ARGV[0]
@@ -27,13 +28,14 @@ chapters.each_with_index do |chapter, index|
         img_list.push(src['src'])
       end
     end
+    FileUtils.mkdir(index.to_s)
     Helper.download_images_to_folder(img_list, folder: chapter_index)
   rescue
-    system("rm -r #{index}")
+    FileUtils.remove_dir(index.to_s)
     retry if (tries += 1) < 10
   end
   Helper.create_pdf_from_dir(index.to_s)
-  system("rm -r #{index}")
+  FileUtils.remove_dir(index.to_s)
 end
 
 abort("\n\n***** DONE DOWNLOADING *****")
