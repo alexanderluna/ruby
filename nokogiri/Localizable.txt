@@ -1,0 +1,730 @@
+TEXT_1="Yo soy el Señor tu Dios y nunca cambio.\n\nMalaquías 3:6";
+
+TEXT_2="Estoy lleno de misericordia y gracia y reboso de amor.\n\nSalmos 103:8";
+
+TEXT_3="Las intenciones de Mi corazón se mantendrán firmes para siempre.\n\nSalmos 33:11";
+
+TEXT_4="Te he creado a Mi imagen y con Mi bendición especial.\n\nGénesis 1:27-28";
+
+TEXT_5="He decidido adoptarte en Mi familia antes de la creación del Mundo.\n\nEfesios 1:4-5";
+
+TEXT_6="Yo te guié de las tinieblas al reino de Mi amado Hijo.\n\nColosenses 1:12-13";
+
+TEXT_7="Te he dado una vida eterna porque has creído en Jesucristo.\n\nJuan 3:16";
+
+TEXT_8="He enviado el Espíritu de Mi Hijo a tu corazón para que me puedas llamar Padre.\n\nGálatas 4:6";
+
+TEXT_9="Desde que estás con Cristo te he hecho heredero de todas Mis promesas.\n\nGálatas 3:29";
+
+TEXT_10="Yo te he dado un nuevo corazón y he puesto Mi propio Espíritu en ti.\n\nEzequiel 36:26-27";
+
+TEXT_11="Mi plan para tu futuro está lleno de esperanza.\n\nJeremías 29:11";
+
+TEXT_12="Yo obro en tu vida a través de los deseos de tu corazón.\n\nFilipenses 2:13";
+
+TEXT_13="Yo te daré pastos verdes para que descanses y te guiaré hacia aguas calmadas.\n\nSalmos 23:2";
+
+TEXT_14="Yo doy Mi Espíritu en medidas ilimitadas.\n\nJuan 3:34";
+
+TEXT_15="Yo voy a sostener tu mano para protegerte de cualquier caída.\n\nSalmos 37:24";
+
+TEXT_16="Yo te proveeré con todas las cosas buenas que necesites para cumplir Mi voluntad.\n\nHebreos 13:20-21";
+
+TEXT_17="Yo te disciplinaré con amor como un padre que ama a sus hijos.\n\nProverbios 3:11-12";
+
+TEXT_18="Mi poder descansará sobre ti cuando te sientas débil.\n\n2 Corintios 12:9";
+
+TEXT_19="Yo voy a bendecir tu vida y te cuidaré siempre.\n\nNúmeros 6:24";
+
+TEXT_20="Si Me buscas con todo tu corazón, tú Me encontrarás.\n\nJeremías 29:13";
+
+TEXT_21="Yo voy a proteger tu vida y te libraré de la malicia.\n\nSalmos 97:10";
+
+TEXT_22="Entrégame todas tu preocupaciones porque de verdad me importas.\n\n1 Pedro 5:7";
+
+TEXT_23="No dejaré que te tientan más allá de lo que tú puedas aguantar.\n\n1 Corintios 10:13";
+
+TEXT_24="Mi amor sobrevivirá en cualquier situación.\n\n1 Corintios 13:4-7";
+
+TEXT_25="Yo no retendré ninguna bendición de aquellos con un corazón puro.\n\nSalmos 84:11";
+
+TEXT_26="Yo busco los extranjeros y ayudo a los huérfanos y las viudas.\n\nSalmos 146:9";
+
+TEXT_27="Yo cuidaré aquellos que tengan un corazón puro.\n\nSalmos 116:6";
+
+TEXT_28="Tú eres más que vencedor por medio de Mi amor en Jesucristo.\n\nRomanos 8:37";
+
+TEXT_29="Cuando Jesús aparezca, recibirás una corona de gloria que nunca dejará de brillar.\n\n1 Pedro 5:3";
+
+TEXT_30="Al final del tiempo, Mis seguidores leales brillarán como el Sol en Mi reino.\n\nMateo 13:43";
+
+TEXT_31="Ni una de Mis promesas te fallarán.\n\nJosué 23:14";
+
+TEXT_32="Estoy sentado en los cielos y Mi reino reina sobre todo.\n\nSalmos 103:13";
+
+TEXT_33="Todos mis planes se cumplirán porque Yo conozco el fin desde el principio.\n\nIsaías 46:10";
+
+TEXT_34="Te he conocido desde antes que nacieras y te he diseñado para mis propósitos.\n\nJeremías 1:5";
+
+TEXT_35="Tú eres Santo y libre de culpa porque Jesucristo murió por ti.\n\nColosenses 1:21-22";
+
+TEXT_36="Yo he borrado tus pecados y los he disuelto como la neblina.\n\nIsaías 44:22";
+
+TEXT_37="Yo te he sellado con Mi Espíritu para garantizar tu herencia.\n\nEfesios 1:13-14";
+
+TEXT_38="Yo voy a ser un verdadero Padre para ti.\n\n2 Corintios 6:18";
+
+TEXT_39="Yo te miraré y te mostraré el mejor camino.\n\nSalmos 32:8";
+
+TEXT_40="Confía en Mí con todo tu corazón y Yo te guiaré.\n\nProverbios 3:5-6";
+
+TEXT_41="Yo te voy a dar paz en todos los momentos y en cualquier situación.\n\n2 Tesalonicenses 3:16";
+
+TEXT_42="Llámame cuando estés en problemas y Yo te salvaré.\n\nSalmos 91:15";
+
+TEXT_43="Yo soy tu amparo y el lugar seguro donde te puedes refugiar de tus enemigos.\n\nSalmos 61:3";
+
+TEXT_44="Si tú esperas por Mí, Yo trabajaré para tu bien.\n\nIsaías 64:4";
+
+TEXT_45="Mi amor nunca te fallará.\n\n1 Corintios 13:8";
+
+TEXT_46="Yo soy tu Pastor y voy a suplir todas tus necesidades.\n\nSalmos 23:1";
+
+TEXT_47="Yo te mantendré seguro porque nadie te puede tomar de Mi mano.\n\nJuan 10:29";
+
+TEXT_48="Yo voy a curar tu corazón y voy a atender todas tus heridas.\n\nSalmos 147:3";
+
+TEXT_49="Yo voy a bendecirte en tiempos de luto con Mi consuelo.\n\nMateo 5:4";
+
+TEXT_50="Tú vas a encontrar libertad donde sea que Mi Espíritu habite.\n\n2 Corintios 3:17";
+
+TEXT_51="Tú puedes estar seguro y depender del amor que tengo por ti.\n\n1 Juan 4:16";
+
+TEXT_52="Tú puedes confiar en Mí porque nunca te olvidaré.\n\nSalmos 9:10";
+
+TEXT_53="Yo pongo a personas que están solitarias en familias.\n\nSalmos 68:6";
+
+TEXT_54="Yo te escucho cuando pides cualquier cosa conforme a Mi deseo.\n\n1 Juan 5:14";
+
+TEXT_55="Yo recompensaré aquellos que diligentemente Me busquen con un corazón de fe.\n\nHebreos 11:6";
+
+TEXT_56="Yo te santificaré y te mantendré libre de culpa hasta que Jesús vuelva.\n\n1 Tesalonicenses 5:23-24";
+
+TEXT_57="Cuando tu cuerpo fallezca, tendrás una casa eterna esperando por ti.\n\n2 Corintios 5:1";
+
+TEXT_58="Aquellos que triunfen se sentarán con Mi Hijo en Su trono.\n\nApocalipsis 3:21";
+
+TEXT_59="Mi promesa de vida es para ti y tu familia.\n\nHechos 2:39";
+
+TEXT_60="El mundo me pertenece y todo lo que está en él.\n\nSalmos 24:1";
+
+TEXT_61="Mi trono estará de pie para siempre y la justicia reinará en Mi reino.\n\nSalmos 45:6";
+
+TEXT_62="El pasto se secará y las flores se marchitarán, pero Mi palabra durará para siempre.\n\n1 Pedro 1:24-25";
+
+TEXT_63="Aunque las montañas desaparezcan, Mi amor infinito nunca te dejará.\n\nIsaías 54:10";
+
+TEXT_64="Yo te he guiado de la oscuridad a Mi gloriosa luz.\n\n1 Pedro 2:9";
+
+TEXT_65="Yo he elegido las cosas débiles de este mundo para que avergüencen las cosas fuertes.\n\n1 Corintios 1:27";
+
+TEXT_66="Yo me contento en revelar Mi reino a aquellos con un corazón puro.\n\nMateo 11:25-26";
+
+TEXT_67="Te acerqué a Mí a través de la sangre de Cristo.\n\nEfesios 2:13";
+
+TEXT_68="Tu vieja vida ha muerto y tu nueva vida está guardada junto con Cristo en Mí.\n\nColosenses 3:3";
+
+TEXT_69="El mismo Espíritu que levantó a Jesús de los muertos también te dará vida a ti.\n\nRomanos 8:11";
+
+TEXT_70="Yo te he bendecido en Cristo con todas las bendiciones celestiales.\n\nEfesios 1:3";
+
+TEXT_71="Entrega todo lo que hagas a Mí y tus planes serán exitosos.\n\nProverbios 16:3";
+
+TEXT_72="Yo estoy contigo y Yo siempre te ayudaré porque Yo soy tu Dios.\n\nIsaías 41:10";
+
+TEXT_73="Yo nunca te abandonaré.\n\nHebreos 13:5";
+
+TEXT_74="Yo veo todos tus problemas y Me importan todos tus sufrimientos.\n\nSalmos 31:7";
+
+TEXT_75="Cuando pases por aguas turbulentas, Yo estaré contigo.\n\nIsaías 43:2";
+
+TEXT_76="Mi unción te enseñará todo lo que necesitas saber.\n\n1 Juan 2:27";
+
+TEXT_77="Si vives en Mi lugar secreto, encontrarás descanso bajo Mi sombra.\n\nSalmos 91:1";
+
+TEXT_78="Yo te voy a dar Mi fuerza para que puedas pararte en lugares altos.\n\n2 Samuel 22:33-34";
+
+TEXT_79="Miles podrán caer a tu alrededor pero nada te hará daño a ti.\n\nSalmos 91:7";
+
+TEXT_80="Yo le doy comida a los hambrientos y justicia a los oprimidos.\n\nSalmos 146:7";
+
+TEXT_81="Mi poder divino te dará todo lo que necesites para vivir una buena vida.\n\n2 Pedro 1:3";
+
+TEXT_82="Mi misericordia anulará cualquier sentencia.\n\nSantiago 2:13";
+
+TEXT_83="Yo haré que todas las cosas al final trabajen para tu bien.\n\nRomanos 8:28";
+
+TEXT_84="Humíllate ante Mí y te haré grande.\n\n1 Pedro 5:6";
+
+TEXT_85="Yo he tallado tu nombre en las palmas de Mis manos.\n\nIsaías 49:16";
+
+TEXT_86="Nunca te canses de hacer bien porque cosecharás en buena época.\n\nGálatas 6:9";
+
+TEXT_87="Una corona eterna te esperará en la meta; así que sigue corriendo tu carrera.\n\n1 Corintios 9:24-25";
+
+TEXT_88="Yo he preparado como herencia un reino para ti cuando creé el mundo.\n\nMateo 25:34";
+
+TEXT_89="Es precioso para Mí ver Mis fieles creyentes venir a casa.\n\nSalmos 116:15";
+
+TEXT_90="Yo nunca olvidaré Mis promesas porque soy un Dios misericordioso.\n\nDeuteronomio 4:31";
+
+TEXT_91="Mi reino durará para siempre y Mi dominio durará por siempre.\n\nSalmos 145:13";
+
+TEXT_92="Mi palabra eterna está anclada en los cielos.\n\nSalmos 119:89";
+
+TEXT_93="Yo soy un Dios clemente que es justo y está lleno de misericordia.\n\nSalmos 116:5";
+
+TEXT_94="Yo he creado todas las cosas para Mi placer.\n\nApocalipsis 4:11";
+
+TEXT_95="Yo soy tu padre y tú eres Mi obra.\n\nIsaías 64:8";
+
+TEXT_96="Yo te protegeré y te miraré todos los días de tu vida.\n\nIsaías 46:4";
+
+TEXT_97="Yo he elegido que seas como Mi hijo para que puedas ser parte de Mi familia.\n\nRomanos 8:29";
+
+TEXT_98="Yo he cancelado todos tus pecados y te di vitalidad en Jesucristo.\n\nColosenses 2:13-14";
+
+TEXT_99="Te he criado con Cristo para que te sientes en lugares celestiales.\n\nEfesios 2:5-6";
+
+TEXT_100="Las cosas buenas que he planeado para ti son demasiadas para contarlas.\n\nSalmos 40:5";
+
+TEXT_101="Yo restauraré y refrescaré tu alma cansada.\n\nSalmos 23:3";
+
+TEXT_102="Yo siempre te ayudaré a levantarte y nunca te jalaré hacia abajo.\n\nJeremías 24:6";
+
+TEXT_103="Te he hecho un miembro de Mi propio hogar.\n\nEfesios 2:19";
+
+TEXT_104="Si refugias tu hogar en Mí, ningún mal se te acercará.\n\nSalmos 91:9-10";
+
+TEXT_105="Si te regocijas en Mi palabra, tú serás fructífero y próspero.\n\nSalmos 1:1-3";
+
+TEXT_106="Yo te cubriré todo el día mientras descanses entre Mis hombros.\n\nDeuteronomio 33:12";
+
+TEXT_107="Acércate a Mí y Yo me acercaré a ti.\n\nSantiago 4:8";
+
+TEXT_108="Tú puedes confiar en Mí porque yo soy tu fuerza y tu canción.\n\nIsaías 12:2";
+
+TEXT_109="Mi gentileza enriquecerá tu vida.\n\n2 Samuel 22:36";
+
+TEXT_110="Yo no muestro favoritismo dentro de Mi familia.\n\nEfesios 6:9";
+
+TEXT_111="Yo he elegido que los pobres sean ricos en fe y herederos de Mi reino.\n\nSantiago 2:5";
+
+TEXT_112="Pídeme sabiduría y te la daré generosamente.\n\nSantiago 1:5";
+
+TEXT_113="Yo te daré poder para que veas la vastedad de Mi infinito amor.\n\nEfesios 3:17-19";
+
+TEXT_114="Espera pacientemente por Mí y Yo escucharé tu grito.\n\nSalmos 40:1";
+
+TEXT_115="Incluso cuando tu fe sea débil, Yo me mantendré fiel a ti.\n\n2 Timoteo 2:13";
+
+TEXT_116="Busca Mi reino y todo lo que necesites se te dará.\n\nLucas 12:31";
+
+TEXT_117="Mi espíritu te guiará a toda la verdad y te mostrará lo que está por venir.\n\nJuan 16:12-13";
+
+TEXT_118="Algún día Yo limpiaré todas tus lágrimas y tomaré todo tu dolor.\n\nApocalipsis 21:4";
+
+TEXT_119="Mi gozo infinito y Mi alegría te limpiará de todo dolor y luto.\n\nIsaías 51:11";
+
+TEXT_120="Tú puedes mantener la esperanza que Yo no cambiaré lo que he prometido.\n\nHebreos 6:17-18";
+
+TEXT_121="Mi Espíritu te ha hecho y Mi aliento te dio vida.\n\nJob 33:4";
+
+TEXT_122="No hay ningún lugar en el que puedas escaparte de Mi presencia.\n\nSalmos 139:7-10";
+
+TEXT_123="Yo conozco todos tus días y tu herencia es segura para siempre.\n\nSalmos 37:18";
+
+TEXT_124="Yo te formé gentilmente en el útero de tu madre.\n\nSalmos 139:13";
+
+TEXT_125="Yo estoy encantado de darte Mi reino.\n\nLucas 12:32";
+
+TEXT_126="Mi cara brillará sobre ti todos los días de tu vida.\n\nNúmeros 6:25";
+
+TEXT_127="Mi palabra aclarará tus pasos y alumbrará tu camino.\n\nSalmos 119:105";
+
+TEXT_128="Mi Hijo tomó todas tus enfermedades sobre Él.\n\nMateo 8:16-17";
+
+TEXT_129="Mi Espíritu te ayudará en tu debilidad.\n\nRomanos 8:26";
+
+TEXT_130="Tú puedes hacer todo a través de Jesucristo que te da fuerza.\n\nFilipenses 4:13";
+
+TEXT_131="Sé valiente porque Yo estoy contigo y nunca te fallaré.\n\nDeuteronomio 31:6";
+
+TEXT_132="Yo soy la ayuda presente en tus momentos de problemas.\n\nSalmos 46:1";
+
+TEXT_133="Yo te miraré siempre y te cuidaré para siempre.\n\nSalmos 12:7";
+
+TEXT_134="Yo escucho tu voz cuando Me llamas en la mañana.\n\nSalmos 5:3";
+
+TEXT_135="Todo lo que tengo es tuyo porque tú le perteneces a Jesús.\n\nJuan 16:15";
+
+TEXT_136="Mi bondad y Mi misericordia te perseguirán por toda tu vida.\n\nSalmos 23:6";
+
+TEXT_137="Yo le mostraré a tus hijos Mis caminos y les daré una gran paz.\n\nIsaías 54:13";
+
+TEXT_138="Yo no olvidaré el amor que Me mostraste sirviendo a otros.\n\nHebreos 6:10";
+
+TEXT_139="Yo recompensaré a los que son amables con los pobres.\n\nProverbios 19:17";
+
+TEXT_140="Todas Mis bendiciones caerán sobre aquellos que Me obedezcan.\n\nDeuteronomio 28:2";
+
+TEXT_141="Yo sé lo que necesitas antes de que Me lo pidas.\n\nMateo 6:8";
+
+TEXT_142="Yo abro las puertas de las prisiones y libero a los cautivados.\n\nIsaías 61:1";
+
+TEXT_143="Yo rescataré a los piadosos de todos sus problemas.\n\n2 Pedro 2:9";
+
+TEXT_144="Mi placer puede durar un momento pero Mi favor es tuyo de por vida.\n\nSalmos 30:5";
+
+TEXT_145="Yo llenaré aquellos que están hambrientos por Mi justicia.\n\nMateo 5:6";
+
+TEXT_146="Yo te mostraré los misterios de Mi reino.\n\nMateo 13:11";
+
+TEXT_147="Aquellos que vencieran comerán del árbol de la vida en el paraíso.\n\nApocalipsis 2:7";
+
+TEXT_148="He preparado cosas increíbles para aquellos que me aman.\n\n1 Corintios 2:9";
+
+TEXT_149="Aquellos que son puros de corazón verán Mi cara.\n\nMateo 5:8";
+
+TEXT_150="Yo empecé la buena obra en ti y la terminaré.\n\nFilipenses 1:6";
+
+TEXT_151="Tú puedes estar seguro de Mi promesa sobre la vida eterna porque Yo no puedo mentir.\n\nTito 1:2";
+
+TEXT_152="Mi amor dura para siempre y Mi fidelidad se extiende a todas las generaciones.\n\nSalmos 100:5";
+
+TEXT_153="Mi honradez se eleva como las montañas y Mi justicia es tan profunda como el mar.\n\nSalmos 36:6";
+
+TEXT_154="Mi palabra no regresará a Mí hasta que haya cumplido Mi intención.\n\nIsaías 55:10-11";
+
+TEXT_155="Cuando abro Mi mano, Yo proveo para todo lo que he creado.\n\nSalmos 145:16";
+
+TEXT_156="Yo te amo tan profundamente como un padre ama a sus hijos.\n\nSalmos 103:13";
+
+TEXT_157="Yo no te abandonaré porque estoy contento de hacerte Mío.\n\n1 Samuel 12:22";
+
+TEXT_158="Mi misericordia es más preciosa que la vida.\n\nSalmos 63:3";
+
+TEXT_159="Yo te hice santo por medio del sacrificio de Mi Hijo, Jesucristo.\n\nHebreos 10:10";
+
+TEXT_160="Yo alejé tus pecados de ti tan lejos como el Oeste está del Este.\n\nSalmos 103:12";
+
+TEXT_161="Tú puedes disfrutar la libertad porque Cristo te hizo libre.\n\nGálatas 5:1";
+
+TEXT_162="Yo te ungí con Mi espíritu como garantía de lo que todavía está por venir.\n\n2 Corintios 1:21-22";
+
+TEXT_163="Todo buen regalo que recibes viene directamente de Mi mano.\n\nSantiago 1:17";
+
+TEXT_164="Nada será imposible para aquellos que tengan aunque sea un poco de fe.\n\nMateo 17:19-20";
+
+TEXT_165="Búscame y te mostraré cosas maravillosas de las que no sabías.\n\nJeremías 33:3";
+
+TEXT_166="Yo revelaré Mis secretos a aquellos que Me temen.\n\nSalmos 25:14";
+
+TEXT_167="Yo soy capaz de hacer más por ti de lo que te puedas posiblemente imaginar.\n\nEfesios 3:20";
+
+TEXT_168="Cuando camines por los fuegos de la adversidad, no te quemarás.\n\nIsaías 43:2";
+
+TEXT_169="Ningún arma creada para hacerte daño ganará contra ti.\n\nIsaías 54:17";
+
+TEXT_170="Yo te daré una prenda de alabanza por tu espíritu angustiado.\n\nIsaías 61:3";
+
+TEXT_171="Mi Espíritu descansará sobre ti cuando sufras por el bien de Cristo.\n\n1 Pedro 4:14";
+
+TEXT_172="Mi bondad te guiará a un cambio de corazón.\n\nRomanos 2:4";
+
+TEXT_173="Yo bendeciré a los pacificadores y los llamaré Mis hijos.\n\nMateo 5:9";
+
+TEXT_174="Yo protegeré a los huérfanos y las viudas podrán confiar en Mí.\n\nJeremías 49:11";
+
+TEXT_175="Yo proveeré con justicia a todos los que son maltratados.\n\nSalmos 103:6";
+
+TEXT_176="Mi nombre es una torre fuerte a la que puedes acudir y en donde encontrarás seguridad.\n\nProverbios 18:10";
+
+TEXT_177="Cuando dejes tu cuerpo estarás en casa en Mi presencia.\n\n2 Corintios 5:8";
+
+TEXT_178="El mundo y sus pasiones desaparecerán, pero aquellos que cumplan Mi voluntad vivirán para siempre.\n\n1 Juan 2:17";
+
+TEXT_179="Yo te salvaré del mal y te llevaré seguro a Mi reino.\n\n2 Timoteo 4:18";
+
+TEXT_180="Hay una corona de honradez esperando para todo aquel que ame a Mi Hijo.\n\n2 Timoteo 4:8";
+
+TEXT_181="Si persistes y cumples Mi voluntad, tú recibirás lo que he prometido.\n\nHebreos 10:36";
+
+TEXT_182="Yo he hecho los cielos con Mi palabra y creé las estrellas exhalando.\n\nSalmos 33:6";
+
+TEXT_183="Yo soy fiel de mantener Mi pacto de amabilidad a mil generaciones.\n\nDeuteronomio 7:9";
+
+TEXT_184="Toda la humanidad puede encontrar protección en la sombra de Mis alas.\n\nSalmos 36:7";
+
+TEXT_185="Yo soy padre para los huérfanos y defiendo la causa de las viudas.\n\nSalmos 68:5";
+
+TEXT_186="Yo no abandonaré Mi propia herencia.\n\nSalmos 94:14";
+
+TEXT_187="Yo soy el Señor tu Dios que cura todas tus enfermedades.\n\nÉxodo 15:26";
+
+TEXT_188="Mi amor por ti durará para siempre.\n\nJeremías 31:3";
+
+TEXT_189="Yo doy buenos regalos a Mis hijos cuando lo piden.\n\nMateo 7:11";
+
+TEXT_190="Jesús no se avergüenza de ser tu hermano mayor.\n\nHebreos 2:11";
+
+TEXT_191="Yo perdono pecados y amo mostrar misericordia.\n\nMiqueas 7:18";
+
+TEXT_192="Yo he vaciado Mi amor en ti a través de Mi Espíritu.\n\nRomanos 5:5";
+
+TEXT_193="Yo he puesto Mi ley en ti y la he escrito en tu corazón.\n\nJeremías 31:33";
+
+TEXT_194="Yo cumpliré con todas tus necesidades a través de Mi eterna riqueza en Jesucristo.\n\nFilipenses 4:19";
+
+TEXT_195="Yo guiaré Mi herencia y la cuidaré para siempre.\n\nSalmos 28:9";
+
+TEXT_196="No estés triste porque Mi alegría es tu poder.\n\nNehemías 8:10";
+
+TEXT_197="Mi amor perfecto borrará el miedo de tu corazón.\n\n1 Juan 4:18";
+
+TEXT_198="Yo te salvaré cuando estés en medio de problemas.\n\nSalmos 138:7";
+
+TEXT_199="Yo cubriré a todos los que confían en Mí con Mi protección.\n\nSalmos 5:11";
+
+TEXT_200="Mi armadura te ayudará hacerle frente a los planes del enemigo.\n\nEfesios 6:11";
+
+TEXT_201="Yo convertiré tu luto en danza y te rodearé de alegría.\n\nSalmos 30:11";
+
+TEXT_202="Yo restauraré tu salud y sanaré todas tus heridas.\n\nJeremías 30:17";
+
+TEXT_203="Yo te fortaleceré con piernas de venado para que puedas alcanzar grandes alturas.\n\nHabacuc 3:19";
+
+TEXT_204="Si compartes con los necesitados, Mi gloria guardará tu espalda.\n\nIsaías 58:7-8";
+
+TEXT_205="Si descansas cuando Yo lo hago, encontrarás descanso de todos tus esfuerzos.\n\nHebreos 4:9-10";
+
+TEXT_206="Yo siempre estaré cerca de ti cuando me llames.\n\nDeuteronomio 4:7";
+
+TEXT_207="Cuando tengas problemas llámame y te responderé.\n\nSalmos 86:7";
+
+TEXT_208="No te preocupes, yo te cuidaré.\n\nMateo 6:25-26";
+
+TEXT_209="Aquellos que superan, se convertirán en pilares de Mi templo para siempre.\n\nApocalipsis 3:12";
+
+TEXT_210="Vosotros sois Mis hijos ahora y seréis como Jesús cuando aparezca.\n\n1 Juan 3:2";
+
+TEXT_211="Algún día veras Mi cara y Mi nombre estará en tu frente.\n\nApocalipsis 22:4";
+
+TEXT_212="Toda promesa que hago es verdad porque yo no miento ni cambio de pensamiento.\n\nNúmeros 23:19";
+
+TEXT_213="Los cielos declaran Mi gloria y revelan Mi obra.\n\nSalmos 19:1";
+
+TEXT_214="Yo reino sobre la tierra y todos los reyes me pertenecen.\n\nSalmos 47:7-9";
+
+TEXT_215="Puedes confiar en Mi fidelidad porque Mi palabra es verdad.\n\nSalmos 33:4";
+
+TEXT_216="Yo soy bueno y Mi misericordia es infinita.\n\n1 Crónicas 16:34";
+
+TEXT_217="Me importaste desde el momento en el que naciste.\n\nSalmos 71:6";
+
+TEXT_218="Yo incluso numeré todos los pelos de tu cabeza.\n\nMateo 10:30";
+
+TEXT_219="A través de la fe en Cristo, tú puedes acercarte a Mí con confianza.\n\nEfesios 3:12";
+
+TEXT_220="Si caminas en la luz, la sangre de Mi hijo Jesús te limpiará de todo pecado.\n\n1 Juan 1:7";
+
+TEXT_221="Confía en Mí y no le tengas miedo a lo que otros puedan hacerte a ti.\n\nSalmos 56:11";
+
+TEXT_222="Yo seré tu seguridad y un lugar seguro para tus hijos.\n\nProverbios 14:16";
+
+TEXT_223="Yo soy tu escudo, tu gloria y la motivación que levanta tu cabeza.\n\nSalmos 3:3";
+
+TEXT_224="Yo entregaré con alegría el Espíritu Santo a aquellos que lo pidan.\n\nLucas 11:13";
+
+TEXT_225="El perdón y la curación son sólo algunos de Mis beneficios.\n\nSalmos 103:2-3";
+
+TEXT_226="Si descansas en Mí y esperas pacientemente, heredarás la tierra.\n\nSalmos 37:7-9";
+
+TEXT_227="Yo le doy poder a los agotados y fortalezco a los débiles.\n\nIsaías 40:29";
+
+TEXT_228="Si yo estoy contigo, nadie podrá contra ti.\n\nRomanos 8:31";
+
+TEXT_229="Aunque tengas muchos planes, Mi propósito se cumplirá.\n\nProverbios 19:21";
+
+TEXT_230="Si dos de vosotros se juntan para orar, Yo haré todo lo que me pidan.\n\nMateo 18:19";
+
+TEXT_231="Yo te haré fructífero en tu vejes.\n\nSalmos 92:13-14";
+
+TEXT_232="No desprecies Mi disciplina, porque en su momento Yo curaré tus heridas.\n\nJob 5:17-18";
+
+TEXT_233="Yo vendo los corazones de los que sufren y consuelo todos los que lloran.\n\nIsaías 61:1-2";
+
+TEXT_234="Yo te consolaré así como una madre lo haría.\n\nIsaías 66:13";
+
+TEXT_235="Tu tristeza durará una noche pero la alegría vendrá en la mañana.\n\nSalmos 30:5";
+
+TEXT_236="Me complace cuando compartes con otros.\n\nHebreos 13:16";
+
+TEXT_237="Yo te mantendré seguro del mal.\n\n1 Juan 5:18";
+
+TEXT_238="Yo mostraré misericordia a aquellos que tienen misericordia con otros.\n\nMateo 5:7";
+
+TEXT_239="Yo bendigo a los honrados y los defiendo con Mi favor.\n\nSalmos 5:12";
+
+TEXT_240="Yo te ungiré con aceite hasta que tu copa rebose.\n\nSalmos 23:5";
+
+TEXT_241="Puedes celebrar porque tu nombre está escrito en el cielo.\n\nLucas 10:20";
+
+TEXT_242="Hay una habitación especial en Mi hogar preparada sólo para ti.\n\nJuan 14:2";
+
+TEXT_243="Puedes esperar con ansias por el nuevo cielo y la nueva tierra que he prometido.\n\n2 Pedro 3:13";
+
+TEXT_244="Yo creé el universo con sólo Mi palabra.\n\nGénesis 1:1";
+
+TEXT_245="Yo doy vida y aliento a todas las cosas.\n\nHechos 17:24-25";
+
+TEXT_246="Puedes descansar sobre Mi amor porque Yo tengo el poder para salvarte.\n\nSofonías 3:17";
+
+TEXT_247="Mis pensamientos sobre ti superan numéricamente los granos de arena en la costa.\n\nSalmos 139:17-18";
+
+TEXT_248="Todos los días de tu vida están escritos en Mi libro especial.\n\nSalmos 139:16";
+
+TEXT_249="Yo te guardaré en Mis brazos así como un padre guarda a su hijo.\n\nDeuteronomio 1:31";
+
+TEXT_250="Yo te daré una doble herencia en lugar de tu vergüenza.\n\nIsaías 61:7";
+
+TEXT_251="Yo te vivifiqué en Jesús simplemente porque te amo.\n\nEfesios 2:4-5";
+
+TEXT_252="Yo perdonaré tus pecados y entonces los olvidaré.\n\nHebreos 8:12";
+
+TEXT_253="Tu vida vieja terminó y ahora todo es nuevo en Cristo.\n\n2 Corintios 5:17";
+
+TEXT_254="Estrecha tu mano y me tocarás porque no estoy lejos de ti.\n\nHechos 17:27";
+
+TEXT_255="Incluso antes de que me llames, Yo te responderé.\n\nIsaías 65:24";
+
+TEXT_256="Yo seré la voz detrás de ti guiándote al camino correcto.\n\nIsaías 30:21";
+
+TEXT_257="Yo te entrenaré para combate con Mi escudo de la salvación.\n\nSalmos 18:34-35";
+
+TEXT_258="Yo seré fiel dándote Mi fuerza y Mi protección.\n\n2 Tesalonicenses 3:3";
+
+TEXT_259="Encontrarás seguridad en Mis brazos infinitos.\n\nDeuteronomio 33:27";
+
+TEXT_260="Yo cargaré tus cargas todos los días.\n\nSalmos 68:19";
+
+TEXT_261="Yo te llamé para que heredes Mi bendición.\n\n1 Pedro 3:9";
+
+TEXT_262="Si me honras con tus primeros frutos, rebosarás de abundancia.\n\nProverbios 3:9-10";
+
+TEXT_263="Si ayudas a los pobres, tu luz brillará como el amanecer.\n\nIsaías 58:7-8";
+
+TEXT_264="Si esperas por Mí, Yo renovaré tus fuerzas.\n\nIsaías 40:31";
+
+TEXT_265="Yo te daré un sueño calmado rodeado de seguridad.\n\nSalmos 4:8";
+
+TEXT_266="Yo enriqueceré tu vida y renovaré tu juventud como la del águila.\n\nSalmos 103:5";
+
+TEXT_267="Yo nunca rechazaré el sacrificio de un espíritu roto y un corazón arrepentido.\n\nSalmos 51:17";
+
+TEXT_268="Yo siempre estaré cerca de ti cuando me necesites.\n\n2 Corintios 1:3-4";
+
+TEXT_269="Cuando andes en el valle de sombra de muerte, yo estaré contigo.\n\nSalmos 23:4";
+
+TEXT_270="Yo te cuidaré de caerte hasta que te pares alegre e inocente en Mi presencia.\n\nJudas 1:24";
+
+TEXT_271="Yo aplastaré el mal donde camines.\n\nRomanos 16:20";
+
+TEXT_272="Tú tienes una herencia infinita reservada en el cielo para ti.\n\n1 Pedro 1:3-4";
+
+TEXT_273="Tengo la habilidad de hacer todo lo que he prometido.\n\nRomanos 4:20-21";
+
+TEXT_274="Desde el siglo y hasta el siglo Yo soy Dios.\n\nSalmos 90:2";
+
+TEXT_275="Yo soy justo en todas Mis maneras y amable en todo lo que hago.\n\nSalmos 145:17";
+
+TEXT_276="Yo soy tu Padre y te amo como amo a Mi hijo Jesús.\n\nJuan 17:23";
+
+TEXT_277="Si crees en Jesús, no serás decepcionado.\n\n1 Pedro 2:6";
+
+TEXT_278="Tú eres Mi obra, creada en Cristo para cumplir Mi voluntad.\n\nEfesios 2:10";
+
+TEXT_279="Yo te elegí como sacerdote leal y como nación santa.\n\n1 Pedro 2:9";
+
+TEXT_280="Tu vida viene de Mí porque tú eres Mi descendencia.\n\nHechos 17:28";
+
+TEXT_281="Te bendije en Cristo con una emisión de gracia tras gracia.\n\nJuan 1:16";
+
+TEXT_282="Si confiesas tus pecados, Yo seré fiel y te perdonaré y te limpiaré.\n\n1 Juan 1:9";
+
+TEXT_283="Por Jesús eres libre de toda condenación.\n\nRomanos 8:1";
+
+TEXT_284="Soy feliz de tratarte como Mi hijo y espero que Me puedas llamar Padre.\n\nJeremías 3:19";
+
+TEXT_285="Incluso si tu madre te olvida, Yo nunca te olvidaré.\n\nIsaías 49:15";
+
+TEXT_286="Yo cumpliré Mi propósito para tu vida porque Mi misericordia dura para siempre.\n\nSalmos 138:8";
+
+TEXT_287="Si llenas tu hogar con amor, tú vivirás en Mí y Yo viviré en ti.\n\n1 Juan 4:16";
+
+TEXT_288="Amo cantar sobre ti con gritos de alegría.\n\nSofonías 3:17";
+
+TEXT_289="Si cuido de los pajaritos, ten de cierto que te cuidaré a ti.\n\nLucas 12:6-7";
+
+TEXT_290="Si te mantienes calmado, Yo lucharé por ti.\n\nÉxodo 14:14";
+
+TEXT_291="Yo te daré Mi poder para que destruyas fortalezas espirituales.\n\n2 Corintios 10:3-5";
+
+TEXT_292="Yo te cubriré con Mis plumas y te protegeré con Mis alas.\n\nSalmos 91:4";
+
+TEXT_293="Mis ángeles rodearán a todos los que me temen.\n\nSalmos 34:7";
+
+TEXT_294="Yo te supliré todas tus necesidades para que puedas hacer buenas obras.\n\n2 Corintios 9:8";
+
+TEXT_295="Yo te daré Mi fuerza y te bendeciré con Mi paz.\n\nSalmos 29:11";
+
+TEXT_296="Te di Mi espíritu para que tu cuerpo pueda ser Mi templo.\n\n1 Corintios 6:19";
+
+TEXT_297="Mi amor cubre una multitud de pecados.\n\n1 Pedro 4:8";
+
+TEXT_298="Mi gran paz guarda tu corazón y tus pensamientos en el nombre de Jesús.\n\nFilipenses 4:7";
+
+TEXT_299="Yo te cuido y escucho tus oraciones.\n\n1 Pedro 3:12";
+
+TEXT_300="Jesús es feliz de compartir su herencia contigo.\n\nRomanos 8:16-17";
+
+TEXT_301="Aquellos que vencieran no serán heridos por la segunda muerte.\n\nApocalipsis 2:11";
+
+TEXT_302="Yo te llamé a Mi eterna gloria en Jesucristo.\n\n1 Pedro 5:10";
+
+TEXT_303="Yo te daré un reino que jamás temblará.\n\nHebreos 12:28";
+
+TEXT_304="Yo le prometo una corona de vida a todo aquel que Me ame a pesar de sus pruebas.\n\nSantiago 1:12";
+
+TEXT_305="Soy compasivo con todo lo que he creado.\n\nSalmos 145:9";
+
+TEXT_306="Mi amor se extiende hasta los cielos y Mi fidelidad se extiende más allá de las nubes.\n\nSalmos 36:5";
+
+TEXT_307="Te elegí como Mi propia valiosa posesión.\n\nDeuteronomio 7:6";
+
+TEXT_308="Yo sé todo sobre ti y Soy considerado de todos tus caminos.\n\nSalmos 139:1-3";
+
+TEXT_309="El Espíritu de Cristo te liberó del pecado y la muerte.\n\nRomanos 8:2";
+
+TEXT_310="Jesús cargó con tus pecados en la cruz para que puedas ser sanado.\n\n1 Pedro 2:24";
+
+TEXT_311="Acércate a Mí y te limpiaré de toda mala conciencia.\n\nHebreos 10:22";
+
+TEXT_312="Mi amor es paciente, amable y no mantiene la cuenta de los errores.\n\n1 Corintios 13:4-5";
+
+TEXT_313="Yo soy tu luz y tu salvación, la fuerza de tu vida.\n\nSalmos 27:1";
+
+TEXT_314="Yo te he dado el Espíritu de adopción para que Me puedas llamar Papá.\n\nRomanos 8:15";
+
+TEXT_315="Ven valientemente a Mi trono cuando necesites misericordia y gracia.\n\nHebreos 4:16";
+
+TEXT_316="Prueba y verás que soy un buen Dios.\n\nSalmos 34:8";
+
+TEXT_317="Yo espero por oportunidades para mostrarte Mi compasión.\n\nIsaías 30:18";
+
+TEXT_318="Yo derramaré Mi Espíritu y Mis bendiciones sobre tu descendencia.\n\nIsaías 44:3";
+
+TEXT_319="Yo te consolaré con Mi aliento infinito.\n\n2 Tesalonicenses 2:16-17";
+
+TEXT_320="Deléitate en Mí y te daré los deseos de tu corazón.\n\nSalmos 37:4";
+
+TEXT_321="Sólo pregunta y se te dará.\n\nMateo 7:7";
+
+TEXT_322="Yo busco sobre la tierra aquellos que me pertenecen para fortalecerlos.\n\n2 Crónicas 16:9";
+
+TEXT_323="Yo seré tu lugar seguro en tiempos de dificultad.\n\nNahúm 1:7";
+
+TEXT_324="Yo te daré poder sobre el enemigo y nada te hará daño.\n\nLucas 10:19";
+
+TEXT_325="Si me amas con todo tu corazón, te proveeré con todo lo que necesites.\n\nDeuteronomio 11:13-14";
+
+TEXT_326="Mis hijos superarán el mundo con fe.\n\n1 Juan 5:4";
+
+TEXT_327="Yo anclaré tu corazón en lo más profundo de Mi amor.\n\nEfesios 3:17";
+
+TEXT_328="Yo vendré a ti, tan seguro como el sol sale y la lluvia de la primavera cae.\n\nOseas 6:3";
+
+TEXT_329="Con Mi reino bendeciré los de pobre espíritu.\n\nMateo 5:3";
+
+TEXT_330="Te daré belleza para que reemplaces tus cenizas.\n\nIsaías 61:3";
+
+TEXT_331="Yo seré tu luz y tú reinarás Conmigo para siempre.\n\nApocalipsis 22:5";
+
+TEXT_332="La eterna gloria que te espera sobrepasa por mucho todos tus problemas.\n\n2 Corintios 4:17";
+
+TEXT_333="Una cuidad infinita te espera porque Yo no me avergüenzo de llamarme tu Dios.\n\nHebreos 11:16";
+
+TEXT_334="Cada palabra de cada promesa que he hecho ocurrirá.\n\n1 Reyes 8:56";
+
+TEXT_335="Yo soy Dios y Padre de toda la creación.\n\nEfesios 4:6";
+
+TEXT_336="Mi familia en el cielo y en la tierra es nombrada por Mí.\n\nEfesios 3:14-15";
+
+TEXT_337="Te he creado con mis propias manos.\n\nSalmos 119:73";
+
+TEXT_338="Tú estás hecho temerosamente y maravillosamente.\n\nSalmos 139:14";
+
+TEXT_339="Yo soy tu Dios y tú eres la oveja de Mi pasto.\n\nSalmos 100:3";
+
+TEXT_340="Así como un Pastor cuida su cordero, Yo te mantuve cerca de Mi corazón.\n\nIsaías 40:11";
+
+TEXT_341="Si tus padres te rechazan, Yo te tomaré.\n\nSalmos 27:10";
+
+TEXT_342="Yo soy el Padre perfecto.\n\nMateo 5:48";
+
+TEXT_343="Yo no te dejaré caer porque te cuidaré día y noche.\n\nSalmos 121:3";
+
+TEXT_344="Mis misericordias tiernas nunca fallan porque se renuevan cada mañana.\n\nLamentaciones 3:22-23";
+
+TEXT_345="Yo maximizo Mi gran amor sobre Mis hijos.\n\n1 Juan 3:1";
+
+TEXT_346="Yo he hecho un pacto infinito de sólo hacer cosas buenas para ti.\n\nJeremías 32:40";
+
+TEXT_347="Yo iré delante de ti y lucharé tus batallas.\n\nDeuteronomio 1:30";
+
+TEXT_348="Yo te mantendré a salvo de problemas porque soy tu refugio.\n\nSalmos 32:7";
+
+TEXT_349="Yo soy tu roca y tu salvación, tu refugio que nunca temblará.\n\nSalmos 62:2";
+
+TEXT_350="Tú tendrás paz perfecta si te mantienes enfocado en Mí.\n\nIsaías 26:3";
+
+TEXT_351="Yo estoy muy cercano a aquellos que tienen un corazón roto.\n\nSalmos 34:18";
+
+TEXT_352="Si Me adoras en secreto, te recompensaré públicamente.\n\nMateo 6:6";
+
+TEXT_353="Yo te daré lo que necesites todos los días.\n\nMateo 6:11";
+
+TEXT_354="Yo buscaré aquellos que Me adoren en espíritu y verdad.\n\nJuan 4:23";
+
+TEXT_355="Yo fortaleceré tu ser interior con el poder de Mi Espíritu.\n\nEfesios 3:16";
+
+TEXT_356="Echa tus cargas sobre Mí y Yo te protegeré.\n\nSalmos 55:22";
+
+TEXT_357="Jesús murió para que tú y Yo nos pudiéramos reconciliar.\n\n2 Corintios 5:18-19";
+
+TEXT_358="Ahora es el día de la salvación y el tiempo de recibir Mi favor.\n\n2 Corintios 6:2";
+
+TEXT_359="Cuando ofrecí Mi único Hijo, te he dado el mejor regalo que te pudiera dar.\n\nRomanos 8:32";
+
+TEXT_360="Nada en toda la creación podrá jamás separarte de Mi amor.\n\nRomanos 8:35-39";
+
+TEXT_361="Tú ya no eres un esclavo porque te hice Mi hijo y Mi heredero.\n\nGálatas 4:7";
+
+TEXT_362="Mi hijo te hizo un reino de sacerdotes para que puedas estar Conmigo para siempre.\n\nApocalipsis 1:5-6";
+
+TEXT_363="Cuando Yo destruya la muerte, borraré toda lagrima de tu cara.\n\nIsaías 25:8";
+
+TEXT_364="Yo te guiaré hasta el mismo final porque Yo seré para siempre tu Dios.\n\nSalmos 48:14";
+
+TEXT_365="Sostente fuerte de la esperanza que confiesas, porque Yo soy fiel de cumplir Mis promesas.\n\nHebreos 10:23";
+
