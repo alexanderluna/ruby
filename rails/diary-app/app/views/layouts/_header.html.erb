@@ -1,0 +1,31 @@
+<nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
+  <a href="<%= user_signed_in? ? entries_path : root_path %>" class="navbar-brand">Diary</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggle-menu" aria-controls="toggle-menu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="toggle-menu">
+    <% if user_signed_in? %>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <%= link_to "Settings", edit_user_registration_path, class: "nav-link" %>
+      </li>
+    </ul>
+
+    <div class="form-inline my-2 my-lg-0">
+      <%= link_to "Create Entry", new_entry_path, class: "btn btn-outline-info" %>
+      <%= link_to "Logout", destroy_user_session_path, method: "delete", class: "btn btn-danger" %>
+    </div>
+    <% else %>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+    </ul>
+    <div class="form-inline my-2 my-lg-0">
+      <a class="btn btn-outline-info" href="<%= new_user_registration_path %>">Create Account</a>
+      <a class="btn btn-outline-info" href="<%= new_user_session_path %>">Login</a>
+    </div>
+    <% end %>
+  </div>
+</nav>

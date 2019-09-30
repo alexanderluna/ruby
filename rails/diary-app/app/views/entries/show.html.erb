@@ -1,0 +1,23 @@
+<div class="row show-entry">
+
+  <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+    <div class="date">
+      <h5><%= @entry.date.strftime("%B %d - %Y") %></h5>
+      <%= link_to "Edit Entry", edit_entry_path(@entry), class: "btn btn-info" %>
+    </div><!-- end date -->
+  </div><!-- end aside -->
+
+  <div class="col-xs-12 col-sm-12 col-md-8 col-lg-7">
+    <h1><%= @entry.title %></h1>
+    <p><%= simple_format @entry.content %></p><hr>
+
+    <div class="row">
+    <% @related_entries.each do |entry| %>
+      <div class="col-xs-12 col-sm-12 col-md-4 card-item">
+      <%= render 'entry', entry: entry %>
+      </div><!-- end single entry -->
+    <% end %>
+    </div><!-- end row featured entries -->
+    
+  </div><!-- entry content -->
+</div><!-- closing row -->

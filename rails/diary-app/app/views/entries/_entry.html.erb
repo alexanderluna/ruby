@@ -1,0 +1,12 @@
+<div class="card bg-light border-light mb-3">
+  <a href="<%= entry_path(entry) %>">
+    <div class="card-header">
+      <%= entry.date.strftime("%B %d") %>
+    </div>
+  </a>
+  <div class="card-body">
+    <p class="card-text">
+      <%= truncate(sanitize(entry.content, tags: []), length: 100) %>
+    </p>
+  </div>
+</div>

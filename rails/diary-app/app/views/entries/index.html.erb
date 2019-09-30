@@ -1,0 +1,7 @@
+<div class="row all-entries">
+<% @entries.each do |entry| %>
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 card-item">
+  <%= render 'entry', entry: entry %>
+  </div>
+<% end %>
+</div>

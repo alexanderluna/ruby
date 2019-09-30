@@ -1,0 +1,7 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  image_data: '{"id":"d5ebf0f9a3d17bf6e8eacca7fe2311b8.jpg","storage":"store","metadata":{"filename":"moss-3101476_1920.jpg","size":347343,"mime_type":"image/jpeg"}}'
+
+two:
+  image_data: '{"id":"d5ebf0f9a3d17bf6e8eacca7fe2311b8.jpg","storage":"store","metadata":{"filename":"moss-3101476_1920.jpg","size":347343,"mime_type":"image/jpeg"}}'

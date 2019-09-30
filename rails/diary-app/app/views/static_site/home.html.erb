@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DiaryApp</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <div class="home">
+      <% flash.each do |message_type, message| %>
+      <% message_type = 'info' if message_type == "notice" || message_type == "alert" %>
+      <div class="alert alert-<%= message_type %>">
+        <%= message %>
+        <button class="close" data-dismiss="alert">×</button>
+      </div>
+      <% end %>
+    </div>
+    
+    <div class="jumbotron">
+      <h1 class="display-4">Your Private Diary in the cloud</h1>
+      <p class="lead">Life is a journey, start documenting yours...</p>
+      <a class="btn btn-light btn-lg" href="<%= new_user_registration_path %>">Create Account</a>
+      <a class="btn btn-info btn-lg" href="<%= new_user_session_path %>">Log in</a>
+    </div>
+  </body>
+</html>

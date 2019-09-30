@@ -1,0 +1,12 @@
+<div class="row justify-content-md-center">
+  <div class="col-sm-12 col-md-4">
+    <h2>Sign up</h2>
+
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= render 'form_fields', f: f %>
+      <div class="form-group">
+        <%= f.submit "Sign up", class: "btn btn-lg btn-outline-info" %>
+      </div>
+    <% end %>
+  </div>
+</div>
