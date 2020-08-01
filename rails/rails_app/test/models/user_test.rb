@@ -78,4 +78,12 @@ class UserTest < ActiveSupport::TestCase
     assert_not @user.authenticated?(:remember, ' ')
   end
 
+  test "asociated post should be destroyed" do
+    @user.save
+    @user.posts.create!(content: "hello world")
+    assert_difference "Post.count", -1 do
+      @user.destroy
+    end
+  end
+
 end
