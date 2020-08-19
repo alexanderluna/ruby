@@ -13,9 +13,7 @@ two:
   price: 9.99
 
 ruby:
-  title: Programming Ruby 1.9
-  description: Ruby is the fastest growing and most exciting dynamic
-    language out there.  If you need to get working programs
-    delivered fast, you should add Ruby to your toolbox.
-  price: 49.50
+  title: Moon Beer
+  description: Moon beer is the best, tastiest and freshed beer you will ever drink
+  price: 2.99
   image_url: beer.jpg
