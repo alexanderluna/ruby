@@ -6,6 +6,7 @@
 
 ## Overview
 
+- [Learning Ruby](learning_ruby/README.md)
 - [Nokogiri](nokogiri/README.md)
 - [Rails](rails/README.md)
 - [Ruby](ruby/README.md)
