@@ -10,7 +10,7 @@ brew install rbenv ruby-build
 sudo apt install rbenv
 ```
 
-2. Then run this command a follow the instructions.
+2. Then run this command and follow the instructions.
 
 ```sh
 rbenv init
@@ -41,7 +41,7 @@ irb(main):001>
 ## Overview
 
   1. [Introduction](./introduction.rb)
-  2. [Classes and Objects](./class_objects.rb)
+  2. [Classes and Objects](./classes_objects.rb)
 
 ## Variables
 
