@@ -10,9 +10,9 @@ class ProductsTest < ApplicationSystemTestCase
     assert_selector "h1", text: "Products"
   end
 
-  test "creating a Product" do
+  test "should create product" do
     visit products_url
-    click_on "New Product"
+    click_on "New product"
 
     fill_in "Description", with: @product.description
     fill_in "Image url", with: @product.image_url
@@ -24,9 +24,9 @@ class ProductsTest < ApplicationSystemTestCase
     click_on "Back"
   end
 
-  test "updating a Product" do
-    visit products_url
-    click_on "Edit", match: :first
+  test "should update Product" do
+    visit product_url(@product)
+    click_on "Edit this product", match: :first
 
     fill_in "Description", with: @product.description
     fill_in "Image url", with: @product.image_url
@@ -38,11 +38,9 @@ class ProductsTest < ApplicationSystemTestCase
     click_on "Back"
   end
 
-  test "destroying a Product" do
-    visit products_url
-    page.accept_confirm do
-      click_on "Destroy", match: :first
-    end
+  test "should destroy Product" do
+    visit product_url(@product)
+    click_on "Destroy this product", match: :first
 
     assert_text "Product was successfully destroyed"
   end

@@ -1,19 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: First Product
+  title: MyString
   description: MyText
-  image_url: beer.jpg
+  image_url: MyString
   price: 9.99
 
 two:
-  title: Second Product
+  title: MyString
   description: MyText
-  image_url: beer.jpg
+  image_url: MyString
   price: 9.99
-
-ruby:
-  title: Moon Beer
-  description: Moon beer is the best, tastiest and freshed beer you will ever drink
-  price: 2.99
-  image_url: beer.jpg

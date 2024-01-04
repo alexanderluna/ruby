@@ -9,5 +9,4 @@ git clone project.git
 cd project
 
 bundle install
-yarn install
 ```

@@ -1,45 +1,19 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Depot</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
 
-<head>
-  <title>Moon's Online Store</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <%= csrf_meta_tags %>
-  <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
 
-  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-</head>
-
-<body>
-
-  <header class="main">
-    <h1><%= @page_title %></h1>
-  </header>
-
-  <section class="content">
-
-    <nav class="side_nav">
-
-      <div id="cart" class="carts">
-        <%= render_if @cart && @cart.line_items.any?, @cart %>
-      </div>
-
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/questions">Questions</a></li>
-        <li><a href="/news">News</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-
-    </nav>
-
-    <main class='<%= controller.controller_name %>'>
+  <body>
+    <main class="container mx-auto mt-28 px-5 flex">
       <%= yield %>
     </main>
-
-  </section>
-
-</body>
-
+  </body>
 </html>
