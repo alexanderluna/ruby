@@ -12,8 +12,8 @@ two:
   image_url: ruby.png
   price: 9.99
 
-ruby:
-  title: Programming Ruby 3.3
-  description: Ruby is awesome
-  image_url: ruby.png
+moon_beer:
+  title: Moon Beer
+  description: The best beer you can get
+  image_url: moon_beer.jpg
   price: 29.99
