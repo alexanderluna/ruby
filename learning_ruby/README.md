@@ -6,6 +6,7 @@
 2. [Introduction](./introduction.rb)
 3. [Classes and Objects](./classes_objects.rb)
 4. [Methods](./methods.rb)
+5. [Inheritance, Modules and Mixins](./inheritance_modules_mixins.rb)
 
 ## Installing Ruby
 
