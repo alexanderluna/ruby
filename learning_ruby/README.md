@@ -8,6 +8,7 @@
 4. [Methods](./methods.rb)
 5. [Inheritance, Modules and Mixins](./inheritance_modules_mixins.rb)
 6. [Regular Expressions](./regular_expressions.rb)
+7. [Expressions](./expressions.rb)
 
 ## Installing Ruby
 
