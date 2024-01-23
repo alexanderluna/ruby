@@ -32,6 +32,21 @@ end
 price_in_cents = 150
 
 ################################################################################
+# Binary operators [+, -, *, /] are in fact methods. This enables you to
+# overwrite them in your classes if you want to.
+################################################################################
+
+class String
+  alias old_concat +
+
+  def +(other)
+    old_concat(' new ').concat(other)
+  end
+end
+
+puts 'hello' + 'world' # hello new world
+
+################################################################################
 # Ruby allows to define methods for a specific object adding it to the class
 # itself.
 ################################################################################
