@@ -9,6 +9,7 @@
 5. [Inheritance, Modules and Mixins](./inheritance_modules_mixins.rb)
 6. [Regular Expressions](./regular_expressions.rb)
 7. [Exceptions](./exceptions.rb)
+8. [Input and Output](./input_output.rb)
 
 ## Installing Ruby
 
