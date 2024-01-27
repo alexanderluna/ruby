@@ -10,6 +10,7 @@
 6. [Regular Expressions](./regular_expressions.rb)
 7. [Exceptions](./exceptions.rb)
 8. [Input and Output](./input_output.rb)
+9. [Concurrency](./concurrency.rb)
 
 ## Installing Ruby
 

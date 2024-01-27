@@ -58,9 +58,8 @@ end
 
 ################################################################################
 # Ruby can work with most internet protocols using different modules
-#   - socket:
-#   - net/http:
-#   - lib/net:
+#   - socket: TCP, UDP, SOCKS and Unix domain sockets
+#   - net/http: FTP, HTTP, HTTPS, IMAP, POP and SMTP
 ################################################################################
 
 require 'socket'
