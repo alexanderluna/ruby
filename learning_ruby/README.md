@@ -11,6 +11,7 @@
 7. [Exceptions](./exceptions.rb)
 8. [Input and Output](./input_output.rb)
 9. [Concurrency](./concurrency.rb)
+10. [Unit Testing](./unit_testing.rb)
 
 ## Installing Ruby
 
