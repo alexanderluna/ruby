@@ -265,6 +265,7 @@ shopping_list_order                     # [["bread", 0], ["milk", 1]...]
 ################################################################################
 # [Command-Line arguments] can be accessed through the global ARGV array or
 # ARGF when you only want to access files passed as arguments.
+# Ruby scripts can parse Command-Line options using the [optparse] module
 ################################################################################
 
 count_numbers 1 2 3
@@ -272,9 +273,6 @@ ARGV                                     # ["1", "2", "3"]
 
 log_parser production.log
 ARGF.filename                            # production.log
-
-################################################################################
-# Ruby scripts can parse Command-Line options using the [optparse] module
 
 require "optparse"
 
