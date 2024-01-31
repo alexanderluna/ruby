@@ -12,6 +12,7 @@
 8. [Input and Output](./input_output.rb)
 9. [Concurrency](./concurrency.rb)
 10. [Unit Testing](./unit_testing.rb)
+11. [Ruby Gems](#ruby-gems)
 
 ## Installing Ruby
 
@@ -112,6 +113,84 @@ a build tool that is commonly used as a utility tool to run code from the CLI.
     rake -T                 # list all available tasks
     rake delete_logs
     ```
+
+## Ruby Gems
+
+Ruby has an ecosystem of tools called [Gems](rubygems.org). A Gem is a library
+as well as a packing structure to write Ruby programs. You can download, modify,
+create and share gems.
+
+- `gem`: Command-Line tool for installing and managing gems
+
+    ```sh
+    gem search -ed rails    # -e: exact, -d: details
+    gem install rails
+    ```
+
+- `bundler`: keeps track of dependencies and versions required for the gem
+
+    ```sh
+    gem install bundler
+    bundle init             # generate Gemfile which lists all dependencies
+    bundle install          # installs all listed dependencies
+
+    bundle exec COMMAND     # executes command with gem from the Gemfile
+    bundle binstubs GEM     # generate a bin/GEM file to execute Gemfile gem
+
+    bundle update           # upgrades all gems in the Gemfile to latest version
+    ```
+
+In you `Gemfile` you add all the gems you need for your program together with
+the version. You can use version specifiers to tell bundler which up to which
+version it should upgrade the gem.
+
+```Gemfile
+gem rails '7.1.3.2'         # exact version only
+rails '~> 7.1'              # all minor upgrades to 7.1: 7.1.3, 7.1.6, etc.
+
+group :development do       # ignored in production
+    gem 'standardrb'
+    gem 'debug'
+end
+```
+
+You can create your own gem with the `bundle gem NAME` command. It generates a
+folder structure for you which makes it easier to develop your own gems.
+
+> It is a Ruby convention that each file should have one top level Module/Class
+> and the name of the class is based on the name of the file.
+
+```ruby
+# lib/Gemname/player.rb
+module Gemname
+    class Player
+        def move; end
+    end
+end
+```
+
+```sh
+NAME
+├── CHANGELOG.md
+├── CODE_OF_CONDUCT.md
+├── Gemfile                 # all dependencies for your gem
+├── LICENSE.txt
+├── README.md
+├── Rakefile
+├── bin                     # setup scripts
+│   ├── console
+│   └── setup
+├── lib                     # you code goes here
+│   ├── NAME
+│   │   └── version.rb
+│   └── NAME.rb
+├── NAME.gemspec            # metadata about your gem
+├── sig                     # ruby type info goes here
+│   └── NAME.rbs
+└── test                    # all your tests for you code
+    ├── test_helper.rb
+    └── test_NAME.rb
+```
 
 ## Resources
 

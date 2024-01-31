@@ -6,20 +6,20 @@
 
 ## Overview
 
+- [Why Ruby ?](#why-ruby)
 - [Learning Ruby](learning_ruby/README.md)
-- [Nokogiri](nokogiri/README.md)
 - [Rails](rails/README.md)
+- [Nokogiri](nokogiri/README.md)
 - [Ruby](ruby/README.md)
 - [Sinatra](sinatra/README.md)
 
 ## Why Ruby
 
-The main thrive for learning Ruby was Rails. Ruby and Rails go
-hand in hand. Most of the programming concept I learned in
-theory, started to make sense once I started to work with Ruby
-and Rails. Mostly because of the near english syntax and the
-OOP approach of the language from the beginning. Rails grew a lot
-and matured into a good framework for building websites quick.
+The main thrive for learning Ruby was Rails. Ruby and Rails go hand in hand.
+Most of the programming concept I learned in theory, started to make sense once
+I started to work with Ruby and Rails. Mostly because of the near english syntax
+and the OOP approach of the language from the beginning. Rails grew a lot and
+matured into a good framework for building websites quick.
 
 ## My Goals with Ruby
 
