@@ -14,6 +14,11 @@ bin/dev
 
 - Product: title, description, price, image:blob
 
+```zsh
+# to test the models run
+rails test:models
+```
+
 ## Views
 
 - Product

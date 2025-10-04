@@ -1,0 +1,1 @@
+blob_jpg: <%= ActiveStorage::FixtureSet.blob filename: 'lorem.jpg'%>
