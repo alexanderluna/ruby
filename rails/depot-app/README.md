@@ -8,6 +8,9 @@ rails db:seed
 
 # run development server with css processor
 bin/dev
+
+# turn on caching in development
+rails dev:cache
 ```
 
 ## Models
@@ -23,6 +26,15 @@ rails test:models
 
 - Product
   - index: list all products
+
+## Controllers
+
+- Store
+
+```zsh
+# to test the controllers run
+rails test:controllers
+```
 
 ## Installation
 

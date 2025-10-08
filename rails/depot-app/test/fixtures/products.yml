@@ -9,3 +9,8 @@ two:
   title: Lager
   description: MyText
   price: 9.99
+
+lager:
+  title: Lager Beer
+  description: "The best Lager Beer"
+  price: 9.95
