@@ -11,13 +11,18 @@ bin/dev
 
 # turn on caching in development
 rails dev:cache
+
+# generate & run migrations
+rails g migration your_migration_name
+rails db:migrate
+rails db:migrate:status
 ```
 
 ## Models
 
 - Product: title, description, price, image:blob
 - Cart: LineItems (has-many)
-- LineItem: product (reference), cart (belongs to)
+- LineItem: product (reference), cart (belongs to), quantity
 
 ```zsh
 # to test the models run
