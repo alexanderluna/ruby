@@ -16,6 +16,8 @@ rails dev:cache
 ## Models
 
 - Product: title, description, price, image:blob
+- Cart: LineItems (has-many)
+- LineItem: product (reference), cart (belongs to)
 
 ```zsh
 # to test the models run
@@ -30,6 +32,9 @@ rails test:models
 ## Controllers
 
 - Store
+- Product
+- Cart
+- LineItem
 
 ```zsh
 # to test the controllers run

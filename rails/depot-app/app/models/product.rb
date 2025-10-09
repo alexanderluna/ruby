@@ -1,4 +1,7 @@
 class Product < ApplicationRecord
+  has_many :line_items
+
+  before_destroy :ensure_not_referenced_by_any_line_item
   has_one_attached :image
 
   # update after saving in real time
@@ -17,4 +20,13 @@ class Product < ApplicationRecord
       errors.add(:image, "must be GIF, JPEG or PNG image")
     end
   end
+
+  private
+
+    def ensure_not_referenced_by_any_line_item
+      unless line_items.empty?
+        errors.add(:base, "Line Items present")
+        throw :abort
+      end
+    end
 end
