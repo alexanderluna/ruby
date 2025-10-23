@@ -1,0 +1,9 @@
+<h3>Beer Order Shipped</h3>
+<p>We are thrilled to let you know that you has been shipped:</p>
+<table>
+  <tr>
+    <th colspan="2">Qty</th>
+    <th>Description</th>
+  </tr>
+  <%= render @order.line_items %>
+</table>

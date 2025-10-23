@@ -27,6 +27,8 @@ rails db:migrate:status
   - [Stimulus](#stimulus)
 - [Controllers](#controllers)
 - [Action Cable](#action-cable)
+- [Action Mailer](#action-mailer)
+- [Testing](#testing)
 
 ## Installation
 
@@ -171,6 +173,49 @@ Action Cable combines a Javascript client-side framework with a server-side Ruby
       <!-- our product data goes here -->
     <% end %>
     ```
+
+## Action Mailer
+
+Action Mailer is build on Active Job which allows you to run code in a
+background process to avoid blocking requests. In your `environment.rb`, you
+have to create a configure block and set the delivery method(:smtp, :test ...):
+
+[Action Mailer configuration](https://guides.rubyonrails.org/action_mailer_basics.html#action-mailer-configuration)
+
+```ruby
+Rails.application.configure do
+  config.action_mailer.delivery_method = :test
+end
+```
+
+Now you can create your mailer class and views:
+
+```zsh
+rails g mailer Order received shipped
+```
+
+Each mailer class is a controller where each method renders a different mail.
+That is also why instead of calling the `render` method you call the `mail`
+method which accepts different parameters (:to, :cc, :from, :subject). You can
+render partials from your views. Just remember that the formats have to match.
+If you want to render a partial in your `.text.erb` mailer view your partial
+will have to be also a `.text.erb` partial.
+
+From your controller you can now deliver mails using the mailer class and
+calling the method with `deliver_now` (immediately) or `deliver_later` (async):
+
+```ruby
+OderMailer.received(@order).deliver_later
+```
+
+## Active Job
+
+Active Job lets you run a task in the background to avoid blocking requests.
+You can generate a job and call it from your controller:
+
+```zsh
+rails g job charge_order
+```
 
 ## Testing
 
