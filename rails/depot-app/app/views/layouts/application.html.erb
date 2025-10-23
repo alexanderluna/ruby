@@ -23,8 +23,8 @@
       <h1><%= @page_title %></h1>
     </header>
     <section class="flex">
-      <%= render partial: "layouts/cart", locals: { cart: @cart } %>
-      <nav class="bg-blue-900 p-8">
+      <nav class="bg-blue-900 p-6">
+        <%= render partial: "layouts/cart", locals: { cart: @cart } %>
         <ul class="text-gray-300 leading-8">
           <li><a href="/">Home</a></li>
           <li><a href="/questions">questions</a></li>

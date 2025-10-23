@@ -18,6 +18,16 @@ rails db:migrate
 rails db:migrate:status
 ```
 
+## Table of Contents
+
+- [Installation](#installation)
+- [Models](#models)
+- [Views](#views)
+  - [Hotwire](#hotwire)
+  - [Stimulus](#stimulus)
+- [Controllers](#controllers)
+- [Action Cable](#action-cable)
+
 ## Installation
 
 ```zsh
@@ -31,17 +41,17 @@ gem install rails
 
 - Product: title, description, price, image:blob
 - Cart: LineItems (has-many)
-- LineItem: product (reference), cart (belongs to), quantity
-
-```zsh
-# to test the models run
-rails test:models
-```
+- LineItem: product (reference), cart (belongs to), quantity, order (reference)
+- Order: name, address, email, pay type
 
 ## Views
 
-- Product
-  - index: list all products
+- Product: index, new,  edit, partial
+- Store: index
+- Cart: show, edit, partial
+- Order: new,
+
+### Hotwire
 
 We can integrate Hotwire in our app by making use of turbo streams in our
 controller. Inside the controller, either respond with partial or create a
@@ -80,17 +90,31 @@ end
 <% end %>
 ```
 
+### Stimulus
+
+Stimulus is a modest Javascript framework that you can add to your existing
+HTML to make it more dynamic. In order to get started, create a stimulus
+controller where we place all our logic.
+
+```zsh
+rails g stimulus payment
+```
+
+[stimulus controller](./app/javascript/controllers/payment_controller.js)
+
+First, we declare a list of HTML target elements that we want to interact with.
+Then we initialize the logic by actually doing something with these elements.
+Finally, we have to create the HTML with the relevant data elements.
+
+[stimulus view](./app/views/orders/_form.html.erb)
+
 ## Controllers
 
 - Store
 - Product
 - Cart
 - LineItem
-
-```zsh
-# to test the controllers run
-rails test:controllers
-```
+- Order
 
 ## Action Cable
 
@@ -147,3 +171,19 @@ Action Cable combines a Javascript client-side framework with a server-side Ruby
       <!-- our product data goes here -->
     <% end %>
     ```
+
+## Testing
+
+```zsh
+#  to run all tests
+rails test
+
+# to test the controllers run
+rails test:controllers
+
+# to test the models run
+rails test:models
+
+# to run E2E tests
+rails test:system
+```
